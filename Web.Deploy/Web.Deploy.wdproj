@@ -1,0 +1,80 @@
+﻿<!-- 
+  Microsoft Visual Studio 2008 Web Deployment Project 
+  http://go.microsoft.com/fwlink/?LinkID=104956
+
+-->
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C59C8C1C-7EFD-4567-965A-CF5B71E56080}</ProjectGuid>
+    <SourceWebPhysicalPath>..\Web</SourceWebPhysicalPath>
+    <SourceWebProject>{D42D096E-399D-4618-AEB4-9B023BA1316D}|Web\Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\staging.kindervakantielimburg.be\</OutputPath>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Web.Deploy</SingleAssemblyName>
+    <UseWebConfigReplacement>true</UseWebConfigReplacement>
+    <UseExernalWebConfigReplacementFile>true</UseExernalWebConfigReplacementFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\kindervakantielimburg.be\</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Web.Deploy</SingleAssemblyName>
+    <UseWebConfigReplacement>true</UseWebConfigReplacement>
+    <UseExernalWebConfigReplacementFile>true</UseExernalWebConfigReplacementFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\**\.git\**" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\*.user" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\*.csproj" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\obj\**" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\*.gz" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\*.gz.txt" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\bin\System.Data.SQLite.*" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\Upload\**" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\bin\**\*.pdb" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\Icons\**" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\tiny_mce\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
+      <Section>connectionStrings</Section>
+    </WebConfigReplacementFiles>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v9.0\Microsoft.WebDeployment.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.WebDeployment.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeMerge">
+  </Target>
+  <Target Name="AfterMerge">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--<ItemGroup>
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\n2.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\castle.core.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\castle.microkernel.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\castle.windsor.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\castle.dynamicproxy2.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\iesi.collections.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\antlr3.runtime.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\nhibernate.dll" />
+    <N2Assemlies Include="$(SourceWebPhysicalPath)\bin\log4net.dll" />
+  </ItemGroup>
+  <Target Name="BeforeBuild">
+    <Copy SourceFiles="@(N2Assemlies)" DestinationFolder="$(_AspNetCompilerSourceWebPath)" />
+  </Target>-->
+</Project>

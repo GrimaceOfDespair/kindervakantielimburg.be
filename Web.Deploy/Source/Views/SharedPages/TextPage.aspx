@@ -1,0 +1,1 @@
+<%@ Page Language="C#" MasterPageFile="~/Views/Shared/Site.master" AutoEventWireup="true" Inherits="System.Web.Mvc.ViewPage<TextPage>" Title="" %>
