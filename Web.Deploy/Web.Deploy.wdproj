@@ -45,6 +45,7 @@
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\bin\**\*.pdb" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\Icons\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\tiny_mce\**" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Installation\**" />
   </ItemGroup>
   <ItemGroup>
     <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
