@@ -1,4 +1,5 @@
-﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<N2.Templates.Mvc.Areas.Tests.Models.QueryViewData>" %>
+﻿<%-- 
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<N2.Templates.Mvc.Areas.Tests.Models.QueryViewData>" %>
 
 	<style>div pre { display:none; }</style>
 	<div onclick="document.body.innerHTML=this.innerHTML">NH Queries: <%= Model.Queries().Count%> <a href="#show">(+)</a><br />
@@ -20,3 +21,4 @@
 	<div>Collections: <%= Html.ResolveService<N2.Persistence.NH.ISessionProvider>().OpenSession.Session.Statistics.CollectionCount %></div>
 	<div>Entities: <%= Html.ResolveService<N2.Persistence.NH.ISessionProvider>().OpenSession.Session.Statistics.EntityCount%></div>
 	<div>Time: <%= (int)(DateTime.Now - Context.Timestamp).TotalMilliseconds %> ms</div>
+--%>

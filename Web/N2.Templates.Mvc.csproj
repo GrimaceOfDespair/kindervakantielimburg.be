@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -16,6 +16,8 @@
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation />
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,25 +40,51 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core"><SpecificVersion>False</SpecificVersion><HintPath>bin\Castle.Core.dll</HintPath></Reference>
-    <Reference Include="Castle.MicroKernel"><SpecificVersion>False</SpecificVersion><HintPath>bin\Castle.MicroKernel.dll</HintPath></Reference>
-    <Reference Include="Castle.Windsor"><SpecificVersion>False</SpecificVersion><HintPath>bin\Castle.Windsor.dll</HintPath></Reference>
-    <Reference Include="log4net"><SpecificVersion>False</SpecificVersion><HintPath>bin\log4net.dll</HintPath></Reference>
-    <Reference Include="MvcContrib"><SpecificVersion>False</SpecificVersion><HintPath>bin\MvcContrib.dll</HintPath></Reference>
-    <Reference Include="MvcContrib.FluentHtml"><SpecificVersion>False</SpecificVersion><HintPath>bin\MvcContrib.FluentHtml.dll</HintPath></Reference>
-    <Reference Include="NHibernate"><SpecificVersion>False</SpecificVersion><HintPath>bin\NHibernate.dll</HintPath></Reference>
+    <Reference Include="Castle.Core">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MvcContrib.dll</HintPath>
+    </Reference>
+    <Reference Include="MvcContrib.FluentHtml">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MvcContrib.FluentHtml.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    <Reference Include="System.Data.SQLite">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SQLite.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite"><SpecificVersion>False</SpecificVersion><HintPath>bin\System.Data.SQLite.dll</HintPath></Reference>
-    <Reference Include="System.Web.Abstractions"><SpecificVersion>False</SpecificVersion><HintPath>bin\System.Web.Abstractions.dll</HintPath></Reference>
-    <Reference Include="System.Web.Mvc"><SpecificVersion>False</SpecificVersion><HintPath>bin\System.Web.Mvc.dll</HintPath></Reference>
-    <Reference Include="System.Web.Routing"><SpecificVersion>False</SpecificVersion><HintPath>bin\System.Web.Routing.dll</HintPath></Reference>
+    <Reference Include="System.Web.Mvc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Web.Routing.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -81,6 +109,66 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Editables.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\AcceptationStatus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcceptationStatus.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Definitions.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definitions.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\EditableContainers.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditableContainers.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Editables.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Editables.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\HandicapDegree.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HandicapDegree.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Holiday.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Holiday.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\OwnWheelChair.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OwnWheelChair.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Participation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Participation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Registration.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Registration.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Toolbar.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Toolbar.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\WheelChair.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WheelChair.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl\Zones.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zones.nl.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\Zones.designer.cs">
       <AutoGen>True</AutoGen>
@@ -129,10 +217,28 @@
     <Compile Include="Classes\Configuration\TemplatesSection.cs" />
     <Compile Include="Classes\Configuration\WikiElement.cs" />
     <Compile Include="Classes\Find.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Models\Parts\Diet.cs" />
+    <Compile Include="Models\Parts\RegistrationDetails.cs" />
+    <Compile Include="Models\Parts\Handicap.cs" />
+    <Compile Include="Models\Parts\PersonalDetails.cs" />
+    <Compile Include="Models\Parts\Phone.cs" />
+    <Compile Include="Models\Parts\Utilities.cs" />
+    <Compile Include="Models\RegistrationModel.cs" />
+    <Compile Include="Models\Pages\RegistrationContainer.cs" />
+    <Compile Include="Models\Pages\RegistrationPage.cs" />
+    <Compile Include="Models\Parts\AbstractSearchBox.cs" />
+    <Compile Include="Models\Parts\Address.cs" />
+    <Compile Include="Models\Parts\Person.cs" />
+    <Compile Include="Models\Parts\Registration.cs" />
+    <Compile Include="Models\Parts\DatabaseSearchBox.cs" />
+    <Compile Include="Models\Parts\SubMenu.cs" />
+    <Compile Include="Services\DefaultRoleSetter.cs" />
     <Compile Include="Services\IViewConcern.cs" />
     <Compile Include="Services\MvcOnWebFormPartAdapter.cs" />
     <Compile Include="Classes\Tabs.cs" />
     <Compile Include="Areas\Tests\WebFormOnMvcPartAdapter.cs" />
+    <Compile Include="Services\RegistrationTitleSetter.cs" />
     <Compile Include="Services\ThemedMasterViewEngine.cs" />
     <Compile Include="Services\LanguageConcern.cs" />
     <Compile Include="Classes\Zones.cs" />
@@ -344,9 +450,33 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="N2.Extensions"><SpecificVersion>False</SpecificVersion><HintPath>bin\N2.Extensions.dll</HintPath></Reference>
-    <Reference Include="N2.Security"><SpecificVersion>False</SpecificVersion><HintPath>bin\N2.Security.dll</HintPath></Reference>
-    <Reference Include="N2"><SpecificVersion>False</SpecificVersion><HintPath>bin\N2.dll</HintPath></Reference>
+    <Reference Include="N2.Extensions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\N2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="N2.Security">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\N2.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="N2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\N2.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Image.ashx" />
@@ -480,6 +610,30 @@
     <Content Include="Views\Tracking\Index.ascx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_GlobalResources\nl\Definitions.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definitions.nl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl\EditableContainers.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditableContainers.nl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl\Editables.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Editables.nl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl\Registration.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Registration.nl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl\Toolbar.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Toolbar.nl.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl\Zones.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Zones.nl.designer.cs</LastGenOutput>
+    </Content>
     <Content Include="App_Themes\Concrete\Style.css" />
     <Content Include="App_Themes\Concrete\Thumbnail.jpg" />
     <Content Include="App_Themes\ContentFocus\Thumbnail.jpg" />
@@ -503,6 +657,16 @@
     <Content Include="App_Themes\KhakiTabs\Style.css" />
     <Content Include="App_Themes\KhakiTabs\Thumbnail.jpg" />
     <Content Include="App_Themes\KhakiTabs\TopBg.gif" />
+    <Content Include="App_Themes\kvg\images\content-frame.png" />
+    <Content Include="App_Themes\kvg\images\header.png" />
+    <Content Include="App_Themes\kvg\images\logo-blue.png" />
+    <Content Include="App_Themes\kvg\images\logo-green.png" />
+    <Content Include="App_Themes\kvg\images\logo-yellow.png" />
+    <Content Include="App_Themes\kvg\images\pictures-1.png" />
+    <Content Include="App_Themes\kvg\images\pictures-2.png" />
+    <Content Include="App_Themes\kvg\images\pictures-3.png" />
+    <Content Include="App_Themes\kvg\images\pictures-4.png" />
+    <Content Include="App_Themes\kvg\style.css" />
     <Content Include="App_Themes\n2cms\bg.gif" />
     <Content Include="App_Themes\n2cms\body_bg.gif" />
     <Content Include="App_Themes\n2cms\line_bg.gif" />
@@ -549,11 +713,52 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Poll\Index.ascx" />
+    <Content Include="Views\Registration\Index.ascx" />
     <Content Include="Views\RssFeed\Preview.aspx" />
+    <Content Include="Views\SharedPages\RegistrationPage.aspx" />
+    <Content Include="Views\SharedPages\RegistrationContainer.aspx" />
+    <Content Include="Views\SharedParts\DatabaseSearchBox.ascx" />
     <Content Include="Views\SharedPages\FormPage.aspx" />
     <Content Include="Views\Login\Index.ascx" />
     <Content Include="Views\SharedPages\GalleryItem.aspx" />
+    <Content Include="Views\SharedParts\SubMenu.ascx" />
     <Content Include="Views\SharedParts\RandomImage.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\Holiday.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Holiday.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\Participation.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Participation.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\HandicapDegree.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HandicapDegree.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\WheelChair.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WheelChair.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\OwnWheelChair.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OwnWheelChair.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\nl\AcceptationStatus.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AcceptationStatus.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Management\Views\Shared\" />

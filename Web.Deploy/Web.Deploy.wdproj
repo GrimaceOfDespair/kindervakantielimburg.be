@@ -17,16 +17,23 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>.\staging.kindervakantielimburg.be\</OutputPath>
+    <OutputPath>.\Debug</OutputPath>
     <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Web.Deploy</SingleAssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\kindervakantielimburg.be\</OutputPath>
+    <EnableUpdateable>false</EnableUpdateable>
     <UseMerge>true</UseMerge>
     <SingleAssemblyName>Web.Deploy</SingleAssemblyName>
     <UseWebConfigReplacement>true</UseWebConfigReplacement>
     <UseExernalWebConfigReplacementFile>true</UseExernalWebConfigReplacementFile>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Staging|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
-    <OutputPath>.\kindervakantielimburg.be\</OutputPath>
+    <OutputPath>.\staging.kindervakantielimburg.be\</OutputPath>
     <EnableUpdateable>false</EnableUpdateable>
     <UseMerge>true</UseMerge>
     <SingleAssemblyName>Web.Deploy</SingleAssemblyName>
@@ -47,7 +54,12 @@
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\tiny_mce\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Installation\**" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
+      <Section>connectionStrings</Section>
+    </WebConfigReplacementFiles>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
     <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
       <Section>connectionStrings</Section>
     </WebConfigReplacementFiles>
