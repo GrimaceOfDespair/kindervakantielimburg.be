@@ -35,7 +35,7 @@ body.framed .titleEditor { width:580px; }
 body.framed textarea.textEditor { width:580px; }
 body.framed textarea.freeTextArea { height:380px; }
 body.framed .itemEditor .editDetail { margin:0 0 10px 0; clear:left; }
-body.framed .itemEditor .editorLabel { width:110px; float:left; clear:left; padding:5px 5px 0 0; margin:0 0 5px 0; }
+body.framed .itemEditor .editorLabel { width:200px; float:left; clear:left; padding:5px 5px 0 0; margin:0 0 5px 0; text-align: right; }
 body.framed .itemEditor .editControl { float:left; padding:0; margin:0 0 5px 0; }
 body.framed .itemEditor .editControl label { font-weight:normal; display:inline; float:none; }
 body.framed .itemEditor .editControl input { vertical-align:middle; }

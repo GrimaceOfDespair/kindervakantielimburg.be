@@ -207,4 +207,136 @@
   <data name="Visible.Title" xml:space="preserve">
     <value>Zichtbaar in menu's</value>
   </data>
+  <data name="FirstName.Title" xml:space="preserve">
+    <value>Voornaam</value>
+  </data>
+  <data name="LastName.Title" xml:space="preserve">
+    <value>Achternaam</value>
+  </data>
+  <data name="Attn.Title" xml:space="preserve">
+    <value>Ter attentie van</value>
+  </data>
+  <data name="DateOfBirth.Title" xml:space="preserve">
+    <value>Geboortedatum</value>
+  </data>
+  <data name="Holiday.Title" xml:space="preserve">
+    <value>Vakantie</value>
+  </data>
+  <data name="IdNumber.Title" xml:space="preserve">
+    <value>Nummer identiteitskaart</value>
+  </data>
+  <data name="Number.Title" xml:space="preserve">
+    <value>Huisnummer</value>
+  </data>
+  <data name="Owner.Title" xml:space="preserve">
+    <value>Eigenaar</value>
+  </data>
+  <data name="PhoneNumber.Title" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <data name="PlaceOfBirth.Title" xml:space="preserve">
+    <value>Geboorteplaats</value>
+  </data>
+  <data name="PostalCode.Title" xml:space="preserve">
+    <value>Postcode</value>
+  </data>
+  <data name="Street.Title" xml:space="preserve">
+    <value>Straat</value>
+  </data>
+  <data name="Suffix.Title" xml:space="preserve">
+    <value>Busnummer</value>
+  </data>
+  <data name="Town.Title" xml:space="preserve">
+    <value>Gemeente</value>
+  </data>
+  <data name="AcceptationStatus.Title" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AllowPictures.CheckBoxText" xml:space="preserve">
+    <value>Wanneer er foto's gemaakt worden van deze persoon, dan mag KVG die gebruiken voor publicaties</value>
+  </data>
+  <data name="AllowPictures.Title" xml:space="preserve">
+    <value>Toelating foto's</value>
+  </data>
+  <data name="EatsNo.Title" xml:space="preserve">
+    <value>Eet geen</value>
+  </data>
+  <data name="EatsNoEggs.CheckBoxText" xml:space="preserve">
+    <value>Eet geen eieren</value>
+  </data>
+  <data name="EatsNoEggs.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EatsNoFish.CheckBoxText" xml:space="preserve">
+    <value>Eet geen vis</value>
+  </data>
+  <data name="EatsNoFish.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EatsNoMeat.CheckBoxText" xml:space="preserve">
+    <value>Eet geen vlees</value>
+  </data>
+  <data name="EatsNoMeat.Title" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HandicapFlag.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HandicapFlag.Title" xml:space="preserve">
+    <value>Persoon met handicap?</value>
+  </data>
+  <data name="IQ.Title" xml:space="preserve">
+    <value>IQ</value>
+  </data>
+  <data name="IsKvgMember.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IsKvgMember.Title" xml:space="preserve">
+    <value>Is lid van KVG?</value>
+  </data>
+  <data name="KvgMembership.Title" xml:space="preserve">
+    <value>Lidnummer KVG</value>
+  </data>
+  <data name="MentalHandicap.Title" xml:space="preserve">
+    <value>Mentale handicap</value>
+  </data>
+  <data name="Motivation.Title" xml:space="preserve">
+    <value>Motivering acceptatie / weigering</value>
+  </data>
+  <data name="OtherUtilities.Title" xml:space="preserve">
+    <value>Andere hulpmiddelen</value>
+  </data>
+  <data name="OwnWheelChair.Title" xml:space="preserve">
+    <value>Brengt eigen rolstoel mee?</value>
+  </data>
+  <data name="Participation.Title" xml:space="preserve">
+    <value>Gaat mee als:</value>
+  </data>
+  <data name="PhysicalHandicap.Title" xml:space="preserve">
+    <value>Fysieke handicap</value>
+  </data>
+  <data name="SocialHandicap.Title" xml:space="preserve">
+    <value>Sociale handicap</value>
+  </data>
+  <data name="Vegetarian.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Vegetarian.Title" xml:space="preserve">
+    <value>Is vegetariër?</value>
+  </data>
+  <data name="VisitDate.Title" xml:space="preserve">
+    <value>Bezoek gepland / bezocht</value>
+  </data>
+  <data name="VisitReport.Title" xml:space="preserve">
+    <value>Verslag van bezoek</value>
+  </data>
+  <data name="VisuallyImpaired.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VisuallyImpaired.Title" xml:space="preserve">
+    <value>Slechtziende?</value>
+  </data>
+  <data name="WheelChair.Title" xml:space="preserve">
+    <value>Rolstoel nodig?</value>
+  </data>
 </root>

@@ -117,34 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Calendar.Title" xml:space="preserve">
-    <value>Calender Pagina</value>
+  <data name="Always" xml:space="preserve">
+    <value>Altijd</value>
   </data>
-  <data name="Redirect.Title" xml:space="preserve">
-    <value>Verwijzing</value>
+  <data name="Long Distances" xml:space="preserve">
+    <value>Alleen voor lange afstanden</value>
   </data>
-  <data name="Registration.Description" xml:space="preserve">
-    <value>Een inschrijvingsformulier</value>
-  </data>
-  <data name="Registration.Title" xml:space="preserve">
-    <value>Inschrijving</value>
-  </data>
-  <data name="RegistrationContainer.Description" xml:space="preserve">
-    <value>Een lijst met inschrijvingen</value>
-  </data>
-  <data name="RegistrationContainer.Title" xml:space="preserve">
-    <value>Inschrijvingslijst</value>
-  </data>
-  <data name="RegistrationPage.Description" xml:space="preserve">
-    <value>Een pagina met inschrijvingsgegevens</value>
-  </data>
-  <data name="RegistrationPage.Title" xml:space="preserve">
-    <value>Inschrijving</value>
-  </data>
-  <data name="SiteMap.Title" xml:space="preserve">
-    <value>Sitemap</value>
-  </data>
-  <data name="TextPage.Title" xml:space="preserve">
-    <value>Platte inhoud pagina</value>
+  <data name="Never" xml:space="preserve">
+    <value>Nooit</value>
   </data>
 </root>

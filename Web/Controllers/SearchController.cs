@@ -15,7 +15,10 @@ namespace N2.Templates.Mvc.Controllers
 		[NonAction]
 		public override ActionResult Index()
 		{
-			return Index(null, null);
+            if (CurrentItem.IsPage)
+			    return Index(null, null);
+            
+            return View("SearchBox", CurrentItem);
 		}
 
 		public ActionResult Index(string q, int? p)
