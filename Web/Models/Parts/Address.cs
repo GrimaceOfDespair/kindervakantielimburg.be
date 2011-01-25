@@ -36,11 +36,11 @@ namespace N2.Templates.Mvc.Models.Parts
             set { SetDetail("PostalCode", value, string.Empty); }
         }
 
-        [EditableTextBox("Town", 40, TextMode = TextBoxMode.SingleLine, Columns = 80)]
-        public virtual string Town
+        [EditableTextBox("Location", 40, TextMode = TextBoxMode.SingleLine, Columns = 80)]
+        public virtual string Location
         {
-            get { return (string)(GetDetail("Town") ?? string.Empty); }
-            set { SetDetail("Town", value, string.Empty); }
+            get { return (string)(GetDetail("Location") ?? string.Empty); }
+            set { SetDetail("Location", value, string.Empty); }
         }
     }
 }
