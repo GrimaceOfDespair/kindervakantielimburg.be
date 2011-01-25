@@ -47,6 +47,8 @@
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\obj\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\*.gz" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\*.gz.txt" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\n2.sqlite.db" />
+    <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\App_Data\web.n2.host.config" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\bin\System.Data.SQLite.*" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\Upload\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\bin\**\*.pdb" />
@@ -58,10 +60,22 @@
     <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
       <Section>connectionStrings</Section>
     </WebConfigReplacementFiles>
+    <WebConfigReplacementFiles Include="App_Data\httpRuntime.config">
+      <Section>system.web/httpRuntime</Section>
+    </WebConfigReplacementFiles>
+    <WebConfigReplacementFiles Include="App_Data\authentication.config">
+      <Section>system.web/authentication</Section>
+    </WebConfigReplacementFiles>
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Staging|AnyCPU'">
     <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
       <Section>connectionStrings</Section>
+    </WebConfigReplacementFiles>
+    <WebConfigReplacementFiles Include="App_Data\httpRuntime.config">
+      <Section>system.web/httpRuntime</Section>
+    </WebConfigReplacementFiles>
+    <WebConfigReplacementFiles Include="App_Data\authentication.config">
+      <Section>system.web/authentication</Section>
     </WebConfigReplacementFiles>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v9.0\Microsoft.WebDeployment.targets" />
