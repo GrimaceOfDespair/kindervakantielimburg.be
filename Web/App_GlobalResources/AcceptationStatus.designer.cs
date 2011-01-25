@@ -22,14 +22,14 @@ namespace Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "9.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Definitions {
+    internal class AcceptationStatus {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Definitions() {
+        internal AcceptationStatus() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.Definitions", global::System.Reflection.Assembly.Load("App_GlobalResources"));
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.AcceptationStatus", global::System.Reflection.Assembly.Load("App_GlobalResources"));
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,92 +61,47 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calendar Page.
+        ///   Looks up a localized string similar to Accepted.
         /// </summary>
-        internal static string Calendar_Title {
+        internal static string Accepted {
             get {
-                return ResourceManager.GetString("Calendar.Title", resourceCulture);
+                return ResourceManager.GetString("Accepted", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Redirect.
+        ///   Looks up a localized string similar to In progress.
         /// </summary>
-        internal static string Redirect_Title {
+        internal static string InProgress {
             get {
-                return ResourceManager.GetString("Redirect.Title", resourceCulture);
+                return ResourceManager.GetString("InProgress", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A list of registrations.
+        ///   Looks up a localized string similar to Rejected.
         /// </summary>
-        internal static string RegistrationContainer_Description {
+        internal static string Rejected {
             get {
-                return ResourceManager.GetString("RegistrationContainer.Description", resourceCulture);
+                return ResourceManager.GetString("Rejected", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registration list.
+        ///   Looks up a localized string similar to Unhandled.
         /// </summary>
-        internal static string RegistrationContainer_Title {
+        internal static string Unhandled {
             get {
-                return ResourceManager.GetString("RegistrationContainer.Title", resourceCulture);
+                return ResourceManager.GetString("Unhandled", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A registration page.
+        ///   Looks up a localized string similar to Visited.
         /// </summary>
-        internal static string RegistrationPage_Description {
+        internal static string Visited {
             get {
-                return ResourceManager.GetString("RegistrationPage.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registration.
-        /// </summary>
-        internal static string RegistrationPage_Title {
-            get {
-                return ResourceManager.GetString("RegistrationPage.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to A registration form.
-        /// </summary>
-        internal static string Registration_Description {
-            get {
-                return ResourceManager.GetString("Registration.Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registration.
-        /// </summary>
-        internal static string Registration_Title {
-            get {
-                return ResourceManager.GetString("Registration.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Site Map.
-        /// </summary>
-        internal static string SiteMap_Title {
-            get {
-                return ResourceManager.GetString("SiteMap.Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Plain Content Page.
-        /// </summary>
-        internal static string TextPage_Title {
-            get {
-                return ResourceManager.GetString("TextPage.Title", resourceCulture);
+                return ResourceManager.GetString("Visited", resourceCulture);
             }
         }
     }

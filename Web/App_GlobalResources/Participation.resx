@@ -117,58 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="acceptationFieldSet.Legend" xml:space="preserve">
-    <value>Geaccepteerd?</value>
+  <data name="Conductor" xml:space="preserve">
+    <value>Begeleiding</value>
   </data>
-  <data name="advanced.TabText" xml:space="preserve">
-    <value>Geavanceerd</value>
+  <data name="Kitchen" xml:space="preserve">
+    <value>Keukenploeg</value>
   </data>
-  <data name="contactsTab.TabText" xml:space="preserve">
-    <value>Contactpersonen</value>
-  </data>
-  <data name="content.TabText" xml:space="preserve">
-    <value>Inhoud</value>
-  </data>
-  <data name="dietFieldSet.Legend" xml:space="preserve">
-    <value>Dieet</value>
-  </data>
-  <data name="handicapFieldSet.Legend" xml:space="preserve">
-    <value>Handicap</value>
-  </data>
-  <data name="medicalDetailsTab.TabText" xml:space="preserve">
-    <value>Medische fiche (vervolg)</value>
-  </data>
-  <data name="medicalSummaryTab.TabText" xml:space="preserve">
-    <value>Medische fiche</value>
-  </data>
-  <data name="mobileFieldSet.Legend" xml:space="preserve">
-    <value>GSM</value>
-  </data>
-  <data name="moreInfoTab.TabText" xml:space="preserve">
-    <value>Meer informatie</value>
-  </data>
-  <data name="personalDataTab.TabText" xml:space="preserve">
-    <value>Persoonlijke gegevens</value>
-  </data>
-  <data name="personalDetailsFieldSet.Legend" xml:space="preserve">
-    <value>Persoonsgegevens</value>
-  </data>
-  <data name="registrationDetailsFieldSet.Legend" xml:space="preserve">
-    <value>Inschrijving</value>
-  </data>
-  <data name="registrationPanel.TabText" xml:space="preserve">
-    <value>Inschrijving</value>
-  </data>
-  <data name="seo.TabText" xml:space="preserve">
-    <value>SEO</value>
-  </data>
-  <data name="smtp.TabText" xml:space="preserve">
-    <value>SMTP instellingen</value>
-  </data>
-  <data name="telephoneFieldSet.Legend" xml:space="preserve">
-    <value>Telefoon</value>
-  </data>
-  <data name="wheelChairFieldSet.Legend" xml:space="preserve">
-    <value>Rolstoel</value>
+  <data name="Participator" xml:space="preserve">
+    <value>Deelnemer</value>
   </data>
 </root>

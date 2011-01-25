@@ -117,19 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Accepted" xml:space="preserve">
-    <value>Geaccepteerd</value>
+  <data name="Holiday1" xml:space="preserve">
+    <value>Jongvolwassenen (02/07 - 09/07)</value>
   </data>
-  <data name="InProgress" xml:space="preserve">
-    <value>In behandeling</value>
+  <data name="Holiday2" xml:space="preserve">
+    <value>Mentaal (11/07 - 20/07)</value>
   </data>
-  <data name="Rejected" xml:space="preserve">
-    <value>Geweigerd</value>
+  <data name="Holiday3" xml:space="preserve">
+    <value>Integratie (21/07 - 30/07)</value>
   </data>
-  <data name="Unhandled" xml:space="preserve">
-    <value>Nog niet behandeld</value>
-  </data>
-  <data name="Visited" xml:space="preserve">
-    <value>Bezocht</value>
+  <data name="Holiday4" xml:space="preserve">
+    <value>Kindervakantie (01-08 - 10/08)</value>
   </data>
 </root>

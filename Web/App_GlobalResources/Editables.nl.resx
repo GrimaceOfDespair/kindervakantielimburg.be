@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
 	<!-- 
     Microsoft ResX Schema 
@@ -118,210 +118,231 @@
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
 	<data name="advanced.TabText" xml:space="preserve">
-    <value>Advanced</value>
+    <value>Geavanceerd</value>
   </data>
 	<data name="FooterText.Title" xml:space="preserve">
-    <value>Footer Text</value>
+    <value>Voettekst</value>
   </data>
 	<data name="HostName.HelpTitle" xml:space="preserve">
-    <value>Used in multiple sites scenarios to determine which start page match a certain domain name (e.g. n2cms.com)</value>
+    <value>In een multisite omgeving gebruikt om te bepalen welke de startpagina is</value>
   </data>
 	<data name="HostName.Title" xml:space="preserve">
-    <value>Host Name</value>
+    <value>Hostnaam</value>
   </data>
 	<data name="Image.HelpTitle" xml:space="preserve">
-    <value>Displayed above the main text</value>
+    <value>Getoond boven het hoofditem</value>
   </data>
 	<data name="Image.Title" xml:space="preserve">
-    <value>Main image</value>
+    <value>Hoofd plaatje</value>
   </data>
 	<data name="Images.Title" xml:space="preserve">
-    <value>Images (one image url on each line)</value>
+    <value>Plaatjes (een url per regel)</value>
   </data>
 	<data name="LatestChangesMaxCount.Title" xml:space="preserve">
-    <value>Latest changes max count</value>
+    <value>Laatste wiizigingen hoogste aantal</value>
   </data>
 	<data name="Layout.Title" xml:space="preserve">
     <value>Site Layout</value>
   </data>
 	<data name="LinkText.Title" xml:space="preserve">
-    <value>Linked text</value>
+    <value>Gerelateerde link tekst</value>
   </data>
 	<data name="LinkUrl.Title" xml:space="preserve">
-    <value>Link url</value>
+    <value>Gerelateerde link url</value>
   </data>
 	<data name="Name.HelpTitle" xml:space="preserve">
-    <value>Displayed in the browser's address bar.</value>
+    <value>Weergegeven in de adresbalkk van de browser.</value>
   </data>
 	<data name="Name.Title" xml:space="preserve">
-    <value>URL segment</value>
+    <value>Bestandsnaam</value>
   </data>
 	<data name="Published.BetweenText" xml:space="preserve">
-    <value>and </value>
+    <value>en</value>
   </data>
 	<data name="Published.CheckBoxText" xml:space="preserve">
-    <value>Published between</value>
+    <value>Gepubliceerd tussen</value>
   </data>
 	<data name="Published.HelpTitle" xml:space="preserve">
-    <value>The page is available to visitors between these dates. An empty start date means the item isn't published yet. An empty stop date means the item never expires.</value>
+    <value>Deze pagina is voor bezoekers beschikbaar tussen deze data. Een lege start datum geeft aan dat het item nog niet is gepubliceerd, een lege einddatum betekent dat de pagina niet vervalt.</value>
   </data>
 	<data name="RedirectUrl.Title" xml:space="preserve">
-    <value>Redirect to</value>
+    <value>Verwijzing naar</value>
   </data>
 	<data name="ShowTitle.HelpTitle" xml:space="preserve">
-    <value>Unchecking this options hides the page title</value>
+    <value>Uitzetten om de pagina titel niet te tonen</value>
   </data>
-	<data name="ShowTitle.CheckBoxText" xml:space="preserve">
-    <value>Display title above text content</value>
+	<data name="ShowTitle.Title" xml:space="preserve">
+    <value>Toon pagina titel</value>
   </data>
 	<data name="SmtpHost.Title" xml:space="preserve">
     <value>Host</value>
   </data>
 	<data name="SmtpPassword" xml:space="preserve">
-    <value>Password</value>
+    <value>Wachtwoord</value>
   </data>
 	<data name="SmtpPort.Title" xml:space="preserve">
-    <value>Port</value>
+    <value>Poort</value>
   </data>
 	<data name="SmtpUser.Title" xml:space="preserve">
-    <value>User</value>
+    <value>Gebruiker</value>
   </data>
 	<data name="Text.HelpTitle" xml:space="preserve">
-    <value>The default text on this page, displayed in the central column.</value>
+    <value>De standaard tekst op de pagina.</value>
   </data>
 	<data name="Text.Title" xml:space="preserve">
-    <value>Main text</value>
+    <value>Standaard tekst</value>
   </data>
 	<data name="Theme.Title" xml:space="preserve">
-    <value>Site Theme</value>
+    <value>Site thema</value>
   </data>
 	<data name="Title.HelpTitle" xml:space="preserve">
-    <value>Displyed as the page's main header and in menus.</value>
+    <value>Wordt weergegeven in de kop van de pagina en in menu's.</value>
   </data>
 	<data name="Title.Title" xml:space="preserve">
-    <value>Title</value>
+    <value>Titel</value>
   </data>
 	<data name="Visible.HelpTitle" xml:space="preserve">
-    <value>Unchecking this options hides the page in menus but it's still available if you know the address to it.</value>
+    <value>Uitzetten betekent verbergen in menu's maar wel direct benaderbaar.</value>
   </data>
-	<data name="Visible.CheckBoxText" xml:space="preserve">
-    <value>Reveal page in navigation</value>
-  </data>
-	<data name="ShowTitle.Title" xml:space="preserve">
-		<value>Show title on page</value>
-	</data>
 	<data name="Visible.Title" xml:space="preserve">
-		<value>Visble in menu's</value>
-	</data>
+    <value>Zichtbaar in menu's</value>
+  </data>
 	<data name="FirstName.Title" xml:space="preserve">
-		<value>First name</value>
-	</data>
+    <value>Voornaam</value>
+  </data>
 	<data name="LastName.Title" xml:space="preserve">
-		<value>Last name</value>
-	</data>
+    <value>Achternaam</value>
+  </data>
 	<data name="Attn.Title" xml:space="preserve">
-		<value>Attn</value>
-	</data>
+    <value>Ter attentie van</value>
+  </data>
 	<data name="DateOfBirth.Title" xml:space="preserve">
-		<value>Date of birth</value>
-	</data>
+    <value>Geboortedatum</value>
+  </data>
 	<data name="Holiday.Title" xml:space="preserve">
-		<value>Holiday</value>
-	</data>
+    <value>Vakantie</value>
+  </data>
 	<data name="IdNumber.Title" xml:space="preserve">
-		<value>ID Card number</value>
-	</data>
+    <value>Nummer identiteitskaart</value>
+  </data>
 	<data name="Number.Title" xml:space="preserve">
-		<value>Number</value>
-	</data>
+    <value>Huisnummer</value>
+  </data>
 	<data name="Owner.Title" xml:space="preserve">
-		<value>Owner</value>
-	</data>
+    <value>Eigenaar</value>
+  </data>
 	<data name="PhoneNumber.Title" xml:space="preserve">
-		<value>Number</value>
-	</data>
+    <value>Nummer</value>
+  </data>
 	<data name="PlaceOfBirth.Title" xml:space="preserve">
-		<value>Place of birth</value>
-	</data>
+    <value>Geboorteplaats</value>
+  </data>
 	<data name="PostalCode.Title" xml:space="preserve">
-		<value>Postal code</value>
-	</data>
+    <value>Postcode</value>
+  </data>
 	<data name="Street.Title" xml:space="preserve">
-		<value>Street</value>
-	</data>
+    <value>Straat</value>
+  </data>
 	<data name="Suffix.Title" xml:space="preserve">
-		<value>Address suffix</value>
-	</data>
+    <value>Busnummer</value>
+  </data>
 	<data name="Location.Title" xml:space="preserve">
-		<value>Location</value>
-	</data>
+    <value>Gemeente</value>
+  </data>
 	<data name="AcceptationStatus.Title" xml:space="preserve">
-		<value>Status</value>
-	</data>
+    <value>Status</value>
+  </data>
 	<data name="AllowPictures.CheckBoxText" xml:space="preserve">
-		<value>Any pictures taken of this person may be used in publications from KVG</value>
-	</data>
+    <value>Wanneer er foto's gemaakt worden van deze persoon, dan mag KVG die gebruiken voor publicaties</value>
+  </data>
 	<data name="AllowPictures.Title" xml:space="preserve">
-		<value>Picture allowance</value>
-	</data>
+    <value>Toelating foto's</value>
+  </data>
 	<data name="EatsNo.Title" xml:space="preserve">
-		<value>Eats no</value>
-	</data>
+    <value>Eet geen</value>
+  </data>
 	<data name="EatsNoEggs.CheckBoxText" xml:space="preserve">
-		<value>Eats no eggs</value>
-	</data>
+    <value>Eet geen eieren</value>
+  </data>
+	<data name="EatsNoEggs.Title" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="EatsNoFish.CheckBoxText" xml:space="preserve">
-		<value>Eats no fish</value>
-	</data>
+    <value>Eet geen vis</value>
+  </data>
+	<data name="EatsNoFish.Title" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="EatsNoMeat.CheckBoxText" xml:space="preserve">
-		<value>Eats no meat</value>
-	</data>
+    <value>Eet geen vlees</value>
+  </data>
+	<data name="EatsNoMeat.Title" xml:space="preserve">
+    <value></value>
+  </data>
+	<data name="HandicapFlag.CheckBoxText" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="HandicapFlag.Title" xml:space="preserve">
-		<value>Handicapped?</value>
-	</data>
+    <value>Persoon met handicap?</value>
+  </data>
 	<data name="IQ.Title" xml:space="preserve">
-		<value>IQ</value>
-	</data>
+    <value>IQ</value>
+  </data>
+	<data name="IsKvgMember.CheckBoxText" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="IsKvgMember.Title" xml:space="preserve">
-		<value>Is member of KVG?</value>
-	</data>
+    <value>Is lid van KVG?</value>
+  </data>
 	<data name="KvgMembership.Title" xml:space="preserve">
-		<value>KVG Membership number</value>
-	</data>
+    <value>Lidnummer KVG</value>
+  </data>
 	<data name="MentalHandicap.Title" xml:space="preserve">
-		<value>Mental handicap</value>
-	</data>
+    <value>Mentale handicap</value>
+  </data>
 	<data name="Motivation.Title" xml:space="preserve">
-		<value>Motivation of acceptation / rejection</value>
-	</data>
+    <value>Motivering acceptatie / weigering</value>
+  </data>
 	<data name="OtherUtilities.Title" xml:space="preserve">
-		<value>Other utilities</value>
-	</data>
+    <value>Andere hulpmiddelen</value>
+  </data>
 	<data name="OwnWheelChair.Title" xml:space="preserve">
-		<value>Brings own wheelchair</value>
-	</data>
+    <value>Brengt eigen rolstoel mee?</value>
+  </data>
 	<data name="Participation.Title" xml:space="preserve">
-		<value>Comes as:</value>
-	</data>
+    <value>Gaat mee als:</value>
+  </data>
 	<data name="PhysicalHandicap.Title" xml:space="preserve">
-		<value>Physical handicap</value>
-	</data>
+    <value>Fysieke handicap</value>
+  </data>
 	<data name="SocialHandicap.Title" xml:space="preserve">
-		<value>Social handicap</value>
-	</data>
+    <value>Sociale handicap</value>
+  </data>
+	<data name="Vegetarian.CheckBoxText" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="Vegetarian.Title" xml:space="preserve">
-		<value>Is a vegetarian?</value>
-	</data>
+    <value>Is vegetariër?</value>
+  </data>
 	<data name="VisitDate.Title" xml:space="preserve">
-		<value>Visit planned / Visted</value>
-	</data>
+    <value>Bezoek gepland / bezocht</value>
+  </data>
 	<data name="VisitReport.Title" xml:space="preserve">
-		<value>Visit report</value>
-	</data>
+    <value>Verslag van bezoek</value>
+  </data>
+	<data name="VisuallyImpaired.CheckBoxText" xml:space="preserve">
+    <value></value>
+  </data>
 	<data name="VisuallyImpaired.Title" xml:space="preserve">
-		<value>Visually impaired?</value>
-	</data>
+    <value>Slechtziende?</value>
+  </data>
 	<data name="WheelChair.Title" xml:space="preserve">
-		<value>Needs a wheelchair?</value>
+    <value>Rolstoel nodig?</value>
+  </data>
+	<data name="ShowTitle.CheckBoxText" xml:space="preserve">
+		<value>Toon de titel boven de inhoud</value>
+	</data>
+	<data name="Visible.CheckBoxText" xml:space="preserve">
+		<value>Toon pagina in navigatiestructuur</value>
 	</data>
 </root>
