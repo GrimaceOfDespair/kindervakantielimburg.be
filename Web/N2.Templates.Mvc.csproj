@@ -95,10 +95,70 @@
     <Reference Include="System.Web.Services" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\AcceptationStatus.nl.designer.cs">
+      <DependentUpon>AcceptationStatus.nl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\AcceptationStatus.designer.cs">
+      <DependentUpon>AcceptationStatus.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\WheelChair.designer.cs">
+      <DependentUpon>WheelChair.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Registration.designer.cs">
+      <DependentUpon>Registration.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Participation.designer.cs">
+      <DependentUpon>Participation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\OwnWheelChair.designer.cs">
+      <DependentUpon>OwnWheelChair.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Holiday.designer.cs">
+      <DependentUpon>Holiday.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\WheelChair.nl.designer.cs">
+      <DependentUpon>WheelChair.nl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Participation.nl.designer.cs">
+      <DependentUpon>Participation.nl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditableContainers.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditableContainers.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OwnWheelChair.nl.designer.cs">
+      <DependentUpon>OwnWheelChair.nl.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App_GlobalResources\Definitions.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Definitions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Definitions.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definitions.nl.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\EditableContainers.designer.cs">
       <AutoGen>True</AutoGen>
@@ -110,70 +170,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Editables.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\nl\AcceptationStatus.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AcceptationStatus.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\Definitions.nl.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Definitions.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\EditableContainers.nl.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditableContainers.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\Editables.nl.designer.cs">
+    <Compile Include="App_GlobalResources\Editables.nl.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Editables.nl.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\nl\HandicapDegree.Designer.cs">
+    <Compile Include="App_GlobalResources\HandicapDegree.nl.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HandicapDegree.resx</DependentUpon>
+      <DependentUpon>HandicapDegree.nl.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\nl\Holiday.nl.designer.cs">
+    <Compile Include="App_GlobalResources\Holiday.nl.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Holiday.nl.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\nl\OwnWheelChair.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>OwnWheelChair.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\Participation.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Participation.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\Registration.nl.designer.cs">
+    <Compile Include="App_GlobalResources\Registration.nl.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Registration.nl.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\nl\Toolbar.nl.designer.cs">
+    <Compile Include="App_GlobalResources\Toolbar.nl.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Toolbar.nl.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\WheelChair.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WheelChair.resx</DependentUpon>
-    </Compile>
-    <Compile Include="App_GlobalResources\nl\Zones.nl.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Zones.nl.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\Zones.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Zones.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Zones.nl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zones.nl.resx</DependentUpon>
     </Compile>
     <Compile Include="Areas\Management\Controllers\ManageAnalyticsController.cs" />
     <Compile Include="Areas\Management\ManagementAreaRegistration.cs" />
@@ -233,7 +263,7 @@
     <Compile Include="Models\Parts\Registration.cs" />
     <Compile Include="Models\Parts\DatabaseSearchBox.cs" />
     <Compile Include="Models\Parts\SubMenu.cs" />
-    <Compile Include="Services\DefaultRoleSetter.cs" />
+    <Compile Include="Services\KvgRoleProvider.cs" />
     <Compile Include="Services\IViewConcern.cs" />
     <Compile Include="Services\MvcOnWebFormPartAdapter.cs" />
     <Compile Include="Classes\Tabs.cs" />
@@ -610,30 +640,6 @@
     <Content Include="Views\Tracking\Index.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\Definitions.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Definitions.nl.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\nl\EditableContainers.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>EditableContainers.nl.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\nl\Editables.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Editables.nl.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\nl\Registration.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Registration.nl.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\nl\Toolbar.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Toolbar.nl.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\nl\Zones.nl.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Zones.nl.designer.cs</LastGenOutput>
-    </Content>
     <Content Include="App_Themes\Concrete\Style.css" />
     <Content Include="App_Themes\Concrete\Thumbnail.jpg" />
     <Content Include="App_Themes\ContentFocus\Thumbnail.jpg" />
@@ -725,40 +731,115 @@
     <Content Include="Views\SharedParts\RandomImage.ascx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\Holiday.nl.resx">
+    <Content Include="App_GlobalResources\Definitions.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definitions.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Editables.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Editables.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\HandicapDegree.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HandicapDegree.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AcceptationStatus.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AcceptationStatus.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Holiday.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Holiday.nl.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\Participation.resx">
+    <Content Include="App_GlobalResources\OwnWheelChair.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Participation.Designer.cs</LastGenOutput>
+      <LastGenOutput>OwnWheelChair.nl.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\HandicapDegree.resx">
+    <Content Include="App_GlobalResources\EditableContainers.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>HandicapDegree.Designer.cs</LastGenOutput>
+      <LastGenOutput>EditableContainers.nl.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\WheelChair.resx">
+    <Content Include="App_GlobalResources\Participation.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>WheelChair.Designer.cs</LastGenOutput>
+      <LastGenOutput>Participation.nl.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\OwnWheelChair.resx">
+    <Content Include="App_GlobalResources\Registration.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>OwnWheelChair.Designer.cs</LastGenOutput>
+      <LastGenOutput>Registration.nl.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_GlobalResources\nl\AcceptationStatus.resx">
+    <Content Include="App_GlobalResources\Toolbar.nl.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>AcceptationStatus.Designer.cs</LastGenOutput>
+      <LastGenOutput>Toolbar.nl.designer.cs</LastGenOutput>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WheelChair.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WheelChair.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Zones.nl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Zones.nl.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AcceptationStatus.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AcceptationStatus.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Holiday.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Holiday.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\OwnWheelChair.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OwnWheelChair.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Participation.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Participation.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Registration.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Registration.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\WheelChair.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>WheelChair.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_Themes\kvg\images\asc.gif" />
+    <Content Include="App_Themes\kvg\images\bg.gif" />
+    <Content Include="App_Themes\kvg\images\desc.gif" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Management\Views\Shared\" />
