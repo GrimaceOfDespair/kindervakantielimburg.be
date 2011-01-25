@@ -246,7 +246,7 @@
   <data name="Suffix.Title" xml:space="preserve">
     <value>Busnummer</value>
   </data>
-  <data name="Town.Title" xml:space="preserve">
+  <data name="Location.Title" xml:space="preserve">
     <value>Gemeente</value>
   </data>
   <data name="AcceptationStatus.Title" xml:space="preserve">
