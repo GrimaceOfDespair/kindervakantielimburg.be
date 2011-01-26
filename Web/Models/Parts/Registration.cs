@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Web.UI.WebControls;
 using N2.Details;
 using N2.Integrity;
+using N2.Persistence.Serialization;
 using N2.Templates.Mvc.Models.Pages;
 using N2.Web.UI;
 
@@ -14,14 +15,15 @@ namespace N2.Templates.Mvc.Models.Parts
 		IconUrl = "~/Content/Img/Registration.png")]
 	[AllowedZones("Content", "ColumnLeft", "ColumnRight")]
 	[RestrictParents(typeof (AbstractContentPage))]
-	[AllowedChildren(typeof (Person))]
+	[AllowedChildren(typeof (Person), typeof(Attachment))]
 	[AvailableZone("Contacts", "ContactData")]
-    [TabContainer(PersonalDataTab, "PersonalData", 0, CssClass = "tabPanel registrationTab")]
-    [TabContainer(ContactsTab, "Contacts", 10, CssClass = "tabPanel registrationTab")]
-    [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel registrationTab")]
-    [TabContainer(MedicalSummaryTab, "MedicalSummary", 30, CssClass = "tabPanel registrationTab")]
-    [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel registrationTab")]
-    [TabContainer(AcceptationTab, "Acceptation", 50, CssClass = "tabPanel registrationTab")]
+    [TabContainer(PersonalDataTab, "PersonalData", 0, CssClass = "tabPanel personalDataTab")]
+    [TabContainer(ContactsTab, "Contacts", 10, CssClass = "tabPanel contactsTab")]
+    [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel moreInfoTab")]
+    [TabContainer(MedicalSummaryTab, "MedicalSummary", 30, CssClass = "tabPanel medicalSummaryTab")]
+    [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel medicalDetailsTab")]
+    [TabContainer(AcceptationTab, "Acceptation", 50, CssClass = "tabPanel acceptationTab")]
+    [TabContainer(AttachmentsTab, "Attachments", 60, CssClass = "tabPanel attachmentsTab")]
 	public class Registration : AbstractItem
 	{
         public const string PersonalDataTab = "personalDataTab";
@@ -30,6 +32,14 @@ namespace N2.Templates.Mvc.Models.Parts
         public const string MedicalSummaryTab = "medicalSummaryTab";
         public const string MedicalDetailsTab = "medicalDetailsTab";
         public const string AcceptationTab = "acceptationTab";
+        public const string AttachmentsTab = "attachmentsTab";
+
+        [FileAttachment, EditableFileUploadAttribute("Picture", 5, ContainerName = PersonalDataTab)]
+        public virtual string ImageUrl
+        {
+            get { return (string)base.GetDetail("Picture"); }
+            set { base.SetDetail("Picture", value); }
+        }
 
         [EditableTextBox("Attn", 10, TextMode = TextBoxMode.SingleLine, Columns = 80, ContainerName = PersonalDataTab)]
         public virtual string Attn

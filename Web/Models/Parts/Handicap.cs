@@ -1,5 +1,4 @@
-﻿using System.Web.UI.WebControls;
-using N2.Details;
+﻿using N2.Details;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts

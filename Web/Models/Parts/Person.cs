@@ -3,6 +3,7 @@ using System.Web.UI.WebControls;
 using MvcContrib.FluentHtml.Elements;
 using N2.Details;
 using N2.Web.UI;
+using Literal = System.Web.UI.WebControls.Literal;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
@@ -22,6 +23,7 @@ namespace N2.Templates.Mvc.Models.Parts
         }
 
         [EditableTextBox("FistName", 10, TextMode = TextBoxMode.SingleLine, Columns = 80/*, ContainerName = GeneralDataFieldSet*/)]
+        [Displayable(typeof(Literal), "Text")]
         public virtual string FirstName
         {
             get { return (string)(GetDetail("FirstName") ?? string.Empty); }
@@ -29,6 +31,7 @@ namespace N2.Templates.Mvc.Models.Parts
         }
 
         [EditableTextBox("LastName", 20, TextMode = TextBoxMode.SingleLine, Columns = 80/*, ContainerName = GeneralDataFieldSet*/)]
+        [Displayable(typeof(Literal), "Text")]
         public virtual string LastName
         {
             get { return (string)(GetDetail("LastName") ?? string.Empty); }
