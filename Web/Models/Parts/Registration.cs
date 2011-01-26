@@ -17,13 +17,13 @@ namespace N2.Templates.Mvc.Models.Parts
 	[RestrictParents(typeof (AbstractContentPage))]
 	[AllowedChildren(typeof (Person), typeof(Attachment))]
 	[AvailableZone("Contacts", "ContactData")]
-    [TabContainer(PersonalDataTab, "PersonalData", 0, CssClass = "tabPanel personalDataTab")]
-    [TabContainer(ContactsTab, "Contacts", 10, CssClass = "tabPanel contactsTab")]
-    [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel moreInfoTab")]
-    [TabContainer(MedicalSummaryTab, "MedicalSummary", 30, CssClass = "tabPanel medicalSummaryTab")]
-    [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel medicalDetailsTab")]
-    [TabContainer(AcceptationTab, "Acceptation", 50, CssClass = "tabPanel acceptationTab")]
-    [TabContainer(AttachmentsTab, "Attachments", 60, CssClass = "tabPanel attachmentsTab")]
+    [TabContainer(PersonalDataTab, "PersonalData", 0, CssClass = "tabPanel registrationTab")]
+    [TabContainer(ContactsTab, "Contacts", 10, CssClass = "tabPanel registrationTab")]
+    [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel registrationTab")]
+    [TabContainer(MedicalSummaryTab, "MedicalSummary", 30, CssClass = "tabPanel registrationTab")]
+    [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel registrationTab")]
+    [TabContainer(AcceptationTab, "Acceptation", 50, CssClass = "tabPanel registrationTab")]
+    [TabContainer(AttachmentsTab, "Attachments", 60, CssClass = "tabPanel registrationTab")]
 	public class Registration : AbstractItem
 	{
         public const string PersonalDataTab = "personalDataTab";
