@@ -34,13 +34,6 @@ namespace N2.Templates.Mvc.Models.Parts
         public const string AcceptationTab = "acceptationTab";
         public const string AttachmentsTab = "attachmentsTab";
 
-        [FileAttachment, EditableFileUploadAttribute("Picture", 5, ContainerName = PersonalDataTab)]
-        public virtual string ImageUrl
-        {
-            get { return (string)base.GetDetail("Picture"); }
-            set { base.SetDetail("Picture", value); }
-        }
-
         [EditableTextBox("Attn", 10, TextMode = TextBoxMode.SingleLine, Columns = 80, ContainerName = PersonalDataTab)]
         public virtual string Attn
         {
@@ -128,6 +121,13 @@ namespace N2.Templates.Mvc.Models.Parts
         {
             get { return GetDetail("AllowPictures", false); }
             set { SetDetail("AllowPictures", value, false); }
+        }
+
+        [FileAttachment, EditableFileUploadAttribute("Picture", 90, ContainerName = PersonalDataTab)]
+        public virtual string ImageUrl
+        {
+            get { return (string)base.GetDetail("Picture"); }
+            set { base.SetDetail("Picture", value); }
         }
 
         public virtual string Description
