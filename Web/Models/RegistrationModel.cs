@@ -24,7 +24,5 @@ namespace N2.Templates.Mvc.Models
 		public Registration CurrentItem { get; private set; }
 
 		public IEnumerable<Person> Contacts { get; private set; }
-
-		public bool FormSubmitted { get; set; }
 	}
 }

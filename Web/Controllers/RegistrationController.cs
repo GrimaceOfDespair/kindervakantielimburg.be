@@ -26,7 +26,9 @@ namespace N2.Templates.Mvc.Controllers
 
 		public override ActionResult Index()
 		{
-			return View(new RegistrationModel(CurrentItem, CurrentItem.Contacts));
+			return View(new RegistrationModel(
+                CurrentItem,
+                CurrentItem.Contacts));
 		}
     }
 }
