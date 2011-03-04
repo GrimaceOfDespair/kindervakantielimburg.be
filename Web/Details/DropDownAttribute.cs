@@ -7,6 +7,11 @@ namespace N2.Templates.Details
 {
 	public abstract class DropDownAttribute : AbstractEditableAttribute
 	{
+		public DropDownAttribute(string title, int sortOrder)
+			:base(title, sortOrder)
+		{
+		}
+
 		public DropDownAttribute(string title, string name, int sortOrder)
 			:base(title, name, sortOrder)
 		{
