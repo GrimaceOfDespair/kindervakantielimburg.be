@@ -1,10 +1,11 @@
 ﻿using N2.Details;
+using N2.Templates.Mvc.Classes;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
     [PartDefinition("Handicap")]
-    [FieldSetContainer(HandicapFieldSet, "Handicap", 10)]
+    [StyledFieldSetContainer(HandicapFieldSet, "Handicap", 10, ImageUrl = "~/N2/Resources/icons/error.png")]
     public class Handicap : AbstractItem
     {
         public const string HandicapFieldSet = "HandicapFieldSet";

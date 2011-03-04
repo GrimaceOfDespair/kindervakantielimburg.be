@@ -1,21 +1,24 @@
 ﻿using System;
 using System.Web.UI.WebControls;
 using N2.Details;
+using N2.Templates.Mvc.Classes;
+using N2.Templates.Mvc.Details;
+using N2.Templates.Mvc.Models.Pages;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
     [PartDefinition("RegistrationDetails")]
-    [FieldSetContainer(RegistrationDetailsFieldSet, "RegistrationDetails", 10)]
-    public class RegistrationDetails : AbstractItem
+    [StyledFieldSetContainer(RegistrationDetailsFieldSet, "RegistrationDetails", 10, ImageUrl = "~/N2/Resources/icons/report_user.png")]
+    public class RegistrationDetails : AbstractItem, IHolidayProvider
     {
         public const string RegistrationDetailsFieldSet = "registrationDetailsFieldSet";
 
-        [EditableEnum("Holiday", 10, typeof(Holiday), ContainerName = RegistrationDetailsFieldSet)]
+        [HolidaySelector("Holiday", 10, ContainerName = RegistrationDetailsFieldSet)]
         public virtual Holiday Holiday
         {
-            get { return (Holiday)(GetDetail("Holiday") ?? Holiday.Holiday1); }
-            set { SetDetail("Holiday", value, Holiday.Holiday1); }
+            get { return (Holiday)(GetDetail("Holiday")); }
+            set { SetDetail("Holiday", value); }
         }
 
         [EditableCheckBox("HandicapFlag", 20, ContainerName = RegistrationDetailsFieldSet)]
@@ -47,13 +50,13 @@ namespace N2.Templates.Mvc.Models.Parts
         }
     }
 
-    public enum Holiday
-    {
-        Holiday1,
-        Holiday2,
-        Holiday3,
-        Holiday4,
-    }
+    //public enum Holiday
+    //{
+    //    Holiday1,
+    //    Holiday2,
+    //    Holiday3,
+    //    Holiday4,
+    //}
 
     public enum Participation
     {

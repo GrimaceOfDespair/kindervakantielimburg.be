@@ -141,6 +141,12 @@ namespace N2.Templates.Mvc.Models.Parts
             get { return GetChildren("ContactData").Cast<Person>(); }
 	    }
 
+        [EditableChildren("Attachments", "AttachmentData", "Attachments", 10, ContainerName = AttachmentsTab)]
+        public virtual IList<Attachment> Attachments
+	    {
+            get { return GetChildren("Attachments").Cast<Attachment>(); }
+	    }
+
         [EditableEnum("AcceptationStatus", 10, typeof(AcceptationStatus), ContainerName = AcceptationTab)]
         public virtual AcceptationStatus AcceptationStatus
         {
@@ -173,6 +179,7 @@ namespace N2.Templates.Mvc.Models.Parts
     public enum AcceptationStatus
     {
         Unhandled,
+        InProgress,
         Visited,
         Accepted,
         Rejected

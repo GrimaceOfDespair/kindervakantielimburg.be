@@ -2,6 +2,7 @@ using System;
 using System.Web.UI.WebControls;
 using MvcContrib.FluentHtml.Elements;
 using N2.Details;
+using N2.Templates.Mvc.Classes;
 using N2.Web.UI;
 using Literal = System.Web.UI.WebControls.Literal;
 
@@ -9,8 +10,8 @@ namespace N2.Templates.Mvc.Models.Parts
 {
 	[PartDefinition("Person")]
     //[FieldSetContainer(GeneralDataFieldSet, "GeneralData", 10)]
-    [FieldSetContainer(TelephoneFieldSet, "Telephone", 40)]
-    [FieldSetContainer(MobileFieldSet, "Mobile", 50)]
+    [StyledFieldSetContainer(TelephoneFieldSet, "Telephone", 40, ImageUrl = "~/N2/Resources/icons/telephone.png")]
+    [StyledFieldSetContainer(MobileFieldSet, "Mobile", 50, ImageUrl = "~/N2/Resources/icons/phone.png")]
 	public class Person : AbstractItem
 	{
 	    //public const string GeneralDataFieldSet = "generalDataFieldSet";
@@ -22,7 +23,7 @@ namespace N2.Templates.Mvc.Models.Parts
             get { return CalculateTitle(); }
         }
 
-        [EditableTextBox("FistName", 10, TextMode = TextBoxMode.SingleLine, Columns = 80/*, ContainerName = GeneralDataFieldSet*/)]
+        [EditableTextBox("FirstName", 10, TextMode = TextBoxMode.SingleLine, Columns = 80/*, ContainerName = GeneralDataFieldSet*/)]
         [Displayable(typeof(Literal), "Text")]
         public virtual string FirstName
         {

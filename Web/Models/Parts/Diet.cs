@@ -1,11 +1,12 @@
 ﻿using System.Web.UI.WebControls;
 using N2.Details;
+using N2.Templates.Mvc.Classes;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
     [PartDefinition("Diet")]
-    [FieldSetContainer(DietFieldSet, "Diet", 10)]
+    [StyledFieldSetContainer(DietFieldSet, "Diet", 10, ImageUrl = "~/N2/Resources/icons/pumpkin_pie.png")]
     public class Diet : AbstractItem
     {
         public const string DietFieldSet = "dietFieldSet";

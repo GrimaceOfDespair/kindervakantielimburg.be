@@ -1,11 +1,12 @@
 ﻿using System.Web.UI.WebControls;
 using N2.Details;
+using N2.Templates.Mvc.Classes;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
     [PartDefinition("Utilities")]
-    [FieldSetContainer(WheelChairFieldSet, "WheelChair", 10)]
+    [StyledFieldSetContainer(WheelChairFieldSet, "WheelChair", 10, ImageUrl = "~/N2/Resources/icons/wheelchair.png")]
     public class Utilities : AbstractItem
     {
         public const string WheelChairFieldSet = "wheelChairFieldSet";

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Web.UI.WebControls;
 using N2.Details;
+using N2.Templates.Mvc.Classes;
 using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
     [PartDefinition("PersonalDetails")]
-    [FieldSetContainer(PersonalDetailsFieldSet, "PersonalDetails", 10)]
+    [StyledFieldSetContainer(PersonalDetailsFieldSet, "PersonalDetails", 10, ImageUrl = "~/N2/Resources/icons/vcard.png")]
     public class PersonalDetails : AbstractItem
     {
         public const string PersonalDetailsFieldSet = "personalDetailsFieldSet";
