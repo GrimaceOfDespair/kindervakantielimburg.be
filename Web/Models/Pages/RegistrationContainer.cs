@@ -18,21 +18,12 @@ namespace N2.Templates.Mvc.Models.Pages
 	[RestrictParents(typeof (IStructuralPage))]
 	[SortChildren(SortBy.PublishedDescending)]
     [AvailableZone("NotifiedUsers", "Users")]
-    [TabContainer(NotficationsTab, "Notify users", 20)]
     public class RegistrationContainer : AbstractContentPage
 	{
-	    public const string NotficationsTab = "notificationsTab";
-
 		public IList<RegistrationPage> Registrations
 		{
 			get { return GetChildren(new TypeFilter(typeof (RegistrationPage))).OfType<RegistrationPage>().ToList(); }
 		}
-
-        [EditableChildren("NotifiedUsers", "Users", 10, ContainerName = NotficationsTab)]
-        public virtual IList<SelectUser> NotifiedUsers
-        {
-            get { return GetChildren("NotifiedUsers").Cast<SelectUser>(); }
-        }
 
     }
 }

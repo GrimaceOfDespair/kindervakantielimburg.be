@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using N2.Definitions;
 using N2.Details;
+using N2.Templates.Mvc.Models.Parts;
+using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Pages
 {
@@ -11,8 +13,11 @@ namespace N2.Templates.Mvc.Models.Pages
         Description = "A KVG Holiday.",
         SortOrder = 110,
         IconUrl = "~/Content/Img/holiday.png")]
+    [TabContainer(NotificationsTab, "Notify users", 20)]
     public class Holiday : Event
     {
+        public const string NotificationsTab = "notificationsTab";
+
         [EditableDate("StartDate", 22, ContainerName = Tabs.Content)]
         public override DateTime? EventDate
         {
@@ -39,6 +44,13 @@ namespace N2.Templates.Mvc.Models.Pages
                     value.AddTo(this);
                 }
             }
+        }
+
+
+        [EditableChildren("NotifiedUsers", "Users", 10, ContainerName = NotificationsTab)]
+        public virtual IList<SelectUser> NotifiedUsers
+        {
+            get { return GetChildren("NotifiedUsers").Cast<SelectUser>(); }
         }
 
         [DisplayableLiteral]
