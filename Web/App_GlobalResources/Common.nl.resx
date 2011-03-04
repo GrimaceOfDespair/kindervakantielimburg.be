@@ -117,37 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Calendar.Title" xml:space="preserve">
-    <value>Calendar Page</value>
+  <data name="From" xml:space="preserve">
+    <value>Van {0}</value>
   </data>
-  <data name="Redirect.Title" xml:space="preserve">
-    <value>Redirect</value>
+  <data name="FromUntil" xml:space="preserve">
+    <value>Van {0} tot {1}</value>
   </data>
-  <data name="SiteMap.Title" xml:space="preserve">
-    <value>Site Map</value>
-  </data>
-  <data name="TextPage.Title" xml:space="preserve">
-    <value>Plain Content Page</value>
-  </data>
-  <data name="Registration.Description" xml:space="preserve">
-    <value>A registration form</value>
-  </data>
-  <data name="Registration.Title" xml:space="preserve">
-    <value>Registration</value>
-  </data>
-  <data name="RegistrationContainer.Description" xml:space="preserve">
-    <value>A list of registrations</value>
-  </data>
-  <data name="RegistrationContainer.Title" xml:space="preserve">
-    <value>Registration list</value>
-  </data>
-  <data name="RegistrationPage.Description" xml:space="preserve">
-    <value>A registration page</value>
-  </data>
-  <data name="RegistrationPage.Title" xml:space="preserve">
-    <value>Registration</value>
-  </data>
-  <data name="SelectUser.Title" xml:space="preserve">
-    <value>Select user</value>
+  <data name="Until" xml:space="preserve">
+    <value>Tot {1}</value>
   </data>
 </root>

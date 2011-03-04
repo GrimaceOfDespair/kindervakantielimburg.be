@@ -133,6 +133,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select user.
+        /// </summary>
+        internal static string SelectUser_Title {
+            get {
+                return ResourceManager.GetString("SelectUser.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Site Map.
         /// </summary>
         internal static string SiteMap_Title {
