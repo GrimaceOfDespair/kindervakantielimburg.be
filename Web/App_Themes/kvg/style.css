@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6, p
   margin: .4em 0;
   font-family: Cambria, "Hoefler Text" , "Palatino Linotype" ,Palatino, "Trebuchet MS" ,serif;
 }
+h1
+{
+  width: 360px;
+}
 
 /* colors */
 a
@@ -272,6 +276,7 @@ body
 .path
 {
   margin-bottom: 10px;
+  width: 315px;
 }
 .path .current
 {
