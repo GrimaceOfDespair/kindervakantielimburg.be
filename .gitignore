@@ -30,3 +30,4 @@ _ReSharper*/
 Resources
 Web.Deploy/*
 !Web.Deploy.wdproj
+connectionStrings.config
