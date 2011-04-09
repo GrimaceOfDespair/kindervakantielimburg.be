@@ -27,7 +27,12 @@ namespace N2.Templates.Mvc.Models.Pages
 
         public virtual string Description
         {
-            get { return Registration.Description; }
+            get
+            {
+                var registration = Registration;
+                if (registration == null) return "";
+                return registration.Description;
+            }
         }
 
         [EditableItem("Registration", 10, ContainerName = RegistrationTab)]
@@ -42,6 +47,11 @@ namespace N2.Templates.Mvc.Models.Pages
                     value.AddTo(this);
                 }
             }
+        }
+
+        public override bool IsAuthorized(System.Security.Principal.IPrincipal user)
+        {
+            return true;
         }
     }
 }
