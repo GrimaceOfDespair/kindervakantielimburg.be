@@ -333,4 +333,19 @@
   <data name="StartDate.Title" xml:space="preserve">
     <value>Begindatum</value>
   </data>
+  <data name="MedicalRecordOk.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MedicalRecordOk.Title" xml:space="preserve">
+    <value>Medical Record Ok</value>
+  </data>
+  <data name="Paid.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Paid.Title" xml:space="preserve">
+    <value>Paid?</value>
+  </data>
+  <data name="PaymentInfo.Title" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
 </root>

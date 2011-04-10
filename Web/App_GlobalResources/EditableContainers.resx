@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
+  <!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,119 +59,125 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="metadata">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" />
-							</xsd:sequence>
-							<xsd:attribute name="name" use="required" type="xsd:string" />
-							<xsd:attribute name="type" type="xsd:string" />
-							<xsd:attribute name="mimetype" type="xsd:string" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="assembly">
-						<xsd:complexType>
-							<xsd:attribute name="alias" type="xsd:string" />
-							<xsd:attribute name="name" type="xsd:string" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-							<xsd:attribute ref="xml:space" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="advanced.TabText" xml:space="preserve">
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="advanced.TabText" xml:space="preserve">
     <value>Advanced</value>
   </data>
-	<data name="content.TabText" xml:space="preserve">
+  <data name="content.TabText" xml:space="preserve">
     <value>Content</value>
   </data>
-	<data name="details.Legend" xml:space="preserve">
+  <data name="details.Legend" xml:space="preserve">
     <value>Extended page properties</value>
   </data>
-	<data name="seo.TabText" xml:space="preserve">
+  <data name="seo.TabText" xml:space="preserve">
     <value>SEO</value>
   </data>
-	<data name="smtp.TabText" xml:space="preserve">
+  <data name="smtp.TabText" xml:space="preserve">
     <value>SMTP settings</value>
   </data>
-	<data name="acceptationFieldSet.Legend" xml:space="preserve">
-		<value>Accepted?</value>
-	</data>
-	<data name="contactsTab.TabText" xml:space="preserve">
-		<value>Contact persons</value>
-	</data>
-	<data name="dietFieldSet.Legend" xml:space="preserve">
-		<value>Diet</value>
-	</data>
-	<data name="handicapFieldSet.Legend" xml:space="preserve">
-		<value>Handicap</value>
-	</data>
-	<data name="medicalDetailsTab.TabText" xml:space="preserve">
-		<value>Medical data (contd)</value>
-	</data>
-	<data name="medicalSummaryTab.TabText" xml:space="preserve">
-		<value>Medical data</value>
-	</data>
-	<data name="mobileFieldSet.Legend" xml:space="preserve">
-		<value>Mobile</value>
-	</data>
-	<data name="moreInfoTab.TabText" xml:space="preserve">
-		<value>More information</value>
-	</data>
-	<data name="personalDataTab.TabText" xml:space="preserve">
-		<value>Personal data</value>
-	</data>
-	<data name="personalDetailsFieldSet.Legend" xml:space="preserve">
-		<value>Personal data</value>
-	</data>
-	<data name="registrationDetailsFieldSet.Legend" xml:space="preserve">
-		<value>Registration</value>
-	</data>
-	<data name="registrationPanel.TabText" xml:space="preserve">
-		<value>Registration</value>
-	</data>
-	<data name="telephoneFieldSet.Legend" xml:space="preserve">
-		<value>Phone</value>
-	</data>
-	<data name="wheelChairFieldSet.Legend" xml:space="preserve">
-		<value>Wheelchair</value>
-	</data>
+  <data name="acceptationFieldSet.Legend" xml:space="preserve">
+    <value>Accepted?</value>
+  </data>
+  <data name="contactsTab.TabText" xml:space="preserve">
+    <value>Contact persons</value>
+  </data>
+  <data name="dietFieldSet.Legend" xml:space="preserve">
+    <value>Diet</value>
+  </data>
+  <data name="handicapFieldSet.Legend" xml:space="preserve">
+    <value>Handicap</value>
+  </data>
+  <data name="medicalDetailsTab.TabText" xml:space="preserve">
+    <value>Medical data (contd)</value>
+  </data>
+  <data name="medicalSummaryTab.TabText" xml:space="preserve">
+    <value>Medical data</value>
+  </data>
+  <data name="mobileFieldSet.Legend" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="moreInfoTab.TabText" xml:space="preserve">
+    <value>More information</value>
+  </data>
+  <data name="personalDataTab.TabText" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="personalDetailsFieldSet.Legend" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="registrationDetailsFieldSet.Legend" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="registrationPanel.TabText" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="telephoneFieldSet.Legend" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="wheelChairFieldSet.Legend" xml:space="preserve">
+    <value>Wheelchair</value>
+  </data>
+  <data name="administrationTab.TabText" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="paymentFieldSet.Legend" xml:space="preserve">
+    <value>Payment</value>
+  </data>
 </root>

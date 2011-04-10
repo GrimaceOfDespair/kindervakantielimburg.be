@@ -120,8 +120,8 @@
   <data name="acceptationFieldSet.Legend" xml:space="preserve">
     <value>Geaccepteerd?</value>
   </data>
-  <data name="acceptationTab.TabText" xml:space="preserve">
-    <value>Geaccepteerd?</value>
+  <data name="administrationTab.TabText" xml:space="preserve">
+    <value>Administratie</value>
   </data>
   <data name="advanced.TabText" xml:space="preserve">
     <value>Geavanceerd</value>
@@ -152,6 +152,9 @@
   </data>
   <data name="moreInfoTab.TabText" xml:space="preserve">
     <value>Meer informatie</value>
+  </data>
+  <data name="paymentFieldSet.Legend" xml:space="preserve">
+    <value>Betaling</value>
   </data>
   <data name="personalDataTab.TabText" xml:space="preserve">
     <value>Persoonlijke gegevens</value>

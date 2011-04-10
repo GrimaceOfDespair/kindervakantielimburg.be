@@ -354,4 +354,19 @@
   <data name="StartRegistration.Title" xml:space="preserve">
     <value>Datum waarop de inschrijvingen beginnen</value>
   </data>
+  <data name="MedicalRecordOk.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MedicalRecordOk.Title" xml:space="preserve">
+    <value>Medische Fiche Ok?</value>
+  </data>
+  <data name="Paid.CheckBoxText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Paid.Title" xml:space="preserve">
+    <value>Betaald?</value>
+  </data>
+  <data name="PaymentInfo.Title" xml:space="preserve">
+    <value>Opmerkingen</value>
+  </data>
 </root>

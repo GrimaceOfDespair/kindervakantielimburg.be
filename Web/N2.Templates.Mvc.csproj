@@ -213,6 +213,7 @@
     <Compile Include="Models\Pages\RegistrationRange.cs" />
     <Compile Include="Models\Parts\Attachment.cs" />
     <Compile Include="Models\Parts\Diet.cs" />
+    <Compile Include="Models\Parts\Payment.cs" />
     <Compile Include="Models\Parts\RegistrationDetails.cs" />
     <Compile Include="Models\Parts\Handicap.cs" />
     <Compile Include="Models\Parts\PersonalDetails.cs" />

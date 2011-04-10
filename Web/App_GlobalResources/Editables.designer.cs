@@ -331,6 +331,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string MedicalRecordOk_CheckBoxText {
+            get {
+                return ResourceManager.GetString("MedicalRecordOk.CheckBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medical Record Ok.
+        /// </summary>
+        internal static string MedicalRecordOk_Title {
+            get {
+                return ResourceManager.GetString("MedicalRecordOk.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mental handicap.
         /// </summary>
         internal static string MentalHandicap_Title {
@@ -403,11 +421,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Paid_CheckBoxText {
+            get {
+                return ResourceManager.GetString("Paid.CheckBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paid?.
+        /// </summary>
+        internal static string Paid_Title {
+            get {
+                return ResourceManager.GetString("Paid.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comes as:.
         /// </summary>
         internal static string Participation_Title {
             get {
                 return ResourceManager.GetString("Participation.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remarks.
+        /// </summary>
+        internal static string PaymentInfo_Title {
+            get {
+                return ResourceManager.GetString("PaymentInfo.Title", resourceCulture);
             }
         }
         

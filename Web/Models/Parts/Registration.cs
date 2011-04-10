@@ -22,7 +22,7 @@ namespace N2.Templates.Mvc.Models.Parts
     [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel registrationTab")]
     [TabContainer(MedicalSummaryTab, "MedicalSummary", 30, CssClass = "tabPanel registrationTab")]
     [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel registrationTab")]
-    [TabContainer(AcceptationTab, "Acceptation", 50, CssClass = "tabPanel registrationTab")]
+    [TabContainer(AdministrationTab, "Administration", 50, CssClass = "tabPanel registrationTab")]
     [TabContainer(AttachmentsTab, "Attachments", 60, CssClass = "tabPanel registrationTab")]
 	public class Registration : AbstractItem
 	{
@@ -31,7 +31,7 @@ namespace N2.Templates.Mvc.Models.Parts
         public const string MoreInfoTab = "moreInfoTab";
         public const string MedicalSummaryTab = "medicalSummaryTab";
         public const string MedicalDetailsTab = "medicalDetailsTab";
-        public const string AcceptationTab = "acceptationTab";
+        public const string AdministrationTab = "administrationTab";
         public const string AttachmentsTab = "attachmentsTab";
 
         [EditableTextBox("Attn", 10, TextMode = TextBoxMode.SingleLine, Columns = 80, ContainerName = PersonalDataTab)]
@@ -141,34 +141,55 @@ namespace N2.Templates.Mvc.Models.Parts
             get { return GetChildren("ContactData").Cast<Person>(); }
 	    }
 
-        [EditableChildren("Attachments", "AttachmentData", "Attachments", 10, ContainerName = AttachmentsTab)]
+        [EditableChildren("Attachments", "AttachmentData", "Attachments", 20, ContainerName = AttachmentsTab)]
         public virtual IList<Attachment> Attachments
 	    {
             get { return GetChildren("Attachments").Cast<Attachment>(); }
 	    }
 
-        [EditableEnum("AcceptationStatus", 10, typeof(AcceptationStatus), ContainerName = AcceptationTab)]
+        [EditableItem("Payment", 10, ContainerName = AdministrationTab)]
+        public virtual Payment Payment
+        {
+            get { return (Payment)(GetChild("Payment")); }
+            set
+            {
+                if (value != null)
+                {
+                    value.Name = "Payment";
+                    value.AddTo(this);
+                }
+            }
+        }
+
+        [EditableCheckBox("MedicalRecordOk", 20, ContainerName = AdministrationTab)]
+        public virtual bool MedicalRecordOk
+        {
+            get { return (bool)(GetDetail("MedicalRecordOk") ?? false); }
+            set { SetDetail("MedicalRecordOk", value, false); }
+        }
+
+        [EditableEnum("AcceptationStatus", 30, typeof(AcceptationStatus), ContainerName = AdministrationTab)]
         public virtual AcceptationStatus AcceptationStatus
         {
             get { return (AcceptationStatus)(GetDetail("AcceptationStatus") ?? AcceptationStatus.Unhandled); }
             set { SetDetail("AcceptationStatus", value, AcceptationStatus.Unhandled); }
         }
 
-        [EditableDate("VisitDate", 20, ContainerName = AcceptationTab, ShowTime = false)]
+        [EditableDate("VisitDate", 40, ContainerName = AdministrationTab, ShowTime = false)]
         public virtual DateTime VisitDate
         {
             get { return (DateTime)(GetDetail("AcceptationStatus") ?? default(DateTime)); }
             set { SetDetail("VisitDate", value, default(DateTime)); }
         }
 
-        [EditableTextBox("VisitReport", 30, ContainerName = AcceptationTab, TextMode = TextBoxMode.MultiLine, Columns = 80, Rows = 10)]
+        [EditableTextBox("VisitReport", 50, ContainerName = AdministrationTab, TextMode = TextBoxMode.MultiLine, Columns = 80, Rows = 10)]
         public virtual string VisitReport
         {
             get { return GetDetail("VisitReport", ""); }
             set { SetDetail("VisitReport", value, ""); }
         }
 
-        [EditableTextBox("Motivation", 40, ContainerName = AcceptationTab, TextMode = TextBoxMode.MultiLine, Columns = 80, Rows = 10)]
+        [EditableTextBox("Motivation", 60, ContainerName = AdministrationTab, TextMode = TextBoxMode.MultiLine, Columns = 80, Rows = 10)]
         public virtual string Motivation
         {
             get { return GetDetail("Motivation", ""); }
