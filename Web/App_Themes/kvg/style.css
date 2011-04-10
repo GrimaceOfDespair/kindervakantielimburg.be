@@ -66,6 +66,7 @@ body
 }
 #header
 {
+  position: relative;
   width: 1009px;
   margin: 0 auto;
   height: 150px;
@@ -82,7 +83,7 @@ body
 {
   float: right;
   width: 742px;
-  padding: 15px 35px 15px 15px;
+  padding: 20px 35px 15px 15px;
 }
 .secondary
 {
@@ -122,11 +123,17 @@ body
 /* top */
 .siteHeader
 {
-  display: none;
+  position: absolute;
+  right: 0;
 }
 .siteHeader a
 {
   color: #478db3;
+  display: block;
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  text-indent: -1000px;
 }
 .siteLogo img
 {
