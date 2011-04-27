@@ -41,6 +41,7 @@ namespace N2.Templates.Mvc.Models.Parts
 
 
         [EditableItem("Address", 30/*, ContainerName = GeneralDataFieldSet*/)]
+        [Displayable(typeof(Literal), "Text")]
         public virtual Address Address
         {
             get { return (Address)GetChild("Address"); }
@@ -54,6 +55,7 @@ namespace N2.Templates.Mvc.Models.Parts
             }
         }
         [EditableItem("Telephone", 10, ContainerName = TelephoneFieldSet)]
+        [Displayable(typeof(Literal), "Text")]
         public virtual Phone Telephone
         {
             get { return (Phone)GetChild("Telephone"); }
@@ -68,6 +70,7 @@ namespace N2.Templates.Mvc.Models.Parts
         }
 
         [EditableItem("Mobile", 10, ContainerName = MobileFieldSet)]
+        [Displayable(typeof(Literal), "Text")]
         public virtual Phone Mobile
         {
             get { return (Phone)GetChild("Mobile"); }
