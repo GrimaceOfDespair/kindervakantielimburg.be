@@ -1,40 +1,40 @@
-﻿using System.Web;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using N2.Engine;
-using N2.Templates.Mvc.Controllers;
-using N2.Web.Mvc;
-using N2.Templates.Mvc.Web;
 
-namespace N2.Templates.Mvc
+namespace Web
 {
-	// Note: For instructions on enabling IIS6 or IIS7 classic mode, 
-	// visit http://go.microsoft.com/?LinkId=9394801
+    // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
+    // visit http://go.microsoft.com/?LinkId=9394801
 
-	public class MvcApplication : HttpApplication
-	{
-		protected void Application_Start()
-		{
-			var engine = MvcEngine.Create();
+    public class MvcApplication : System.Web.HttpApplication
+    {
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
+        {
+            filters.Add(new HandleErrorAttribute());
+        }
 
-			ViewEngines.Engines.Insert(0, new ThemedMasterViewEngine());
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-			engine.RegisterControllers(typeof (HomeController).Assembly);
+            routes.MapRoute(
+                "Default", // Route name
+                "{controller}/{action}/{id}", // URL with parameters
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+            );
 
-			RegisterRoutes(RouteTable.Routes, engine);
-		}
+        }
 
-		public static void RegisterRoutes(RouteCollection routes, IEngine engine)
-		{
-			AreaRegistration.RegisterAllAreas(new AreaRegistrationState(engine));
+        protected void Application_Start()
+        {
+            AreaRegistration.RegisterAllAreas();
 
-			routes.MapContentRoute("Content", engine);
-
-			routes.MapRoute(
-				"Default", // Route name
-				"{controller}/{action}/{id}", // URL with parameters
-				new {controller = "Home", action = "Index", id = ""} // Parameter defaults
-				);
-		}
-	}
+            RegisterGlobalFilters(GlobalFilters.Filters);
+            RegisterRoutes(RouteTable.Routes);
+        }
+    }
 }

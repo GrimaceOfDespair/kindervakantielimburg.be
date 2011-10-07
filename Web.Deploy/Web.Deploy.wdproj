@@ -1,19 +1,20 @@
-﻿<!-- 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 
   Microsoft Visual Studio 2008 Web Deployment Project 
   http://go.microsoft.com/fwlink/?LinkID=104956
 
 -->
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>10.0.30319</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C59C8C1C-7EFD-4567-965A-CF5B71E56080}</ProjectGuid>
     <SourceWebPhysicalPath>..\Web</SourceWebPhysicalPath>
     <SourceWebProject>{D42D096E-399D-4618-AEB4-9B023BA1316D}|Web\Web.csproj</SourceWebProject>
     <SourceWebVirtualPath>/Web.csproj</SourceWebVirtualPath>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,10 @@
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\Icons\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Resources\tiny_mce\**" />
     <ExcludeFromBuild Include="$(SourceWebPhysicalPath)\N2\Installation\**" />
+    <ProjectReference Include="..\Web\Web.csproj">
+      <Project>{D42D096E-399D-4618-AEB4-9B023BA1316D}</Project>
+      <Name>Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <WebConfigReplacementFiles Include="App_Data\connectionStrings.config">
@@ -78,7 +83,7 @@
       <Section>system.web/authentication</Section>
     </WebConfigReplacementFiles>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v9.0\Microsoft.WebDeployment.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WebDeployment\v10.0\Microsoft.WebDeployment.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.WebDeployment.targets.
   <Target Name="BeforeBuild">
