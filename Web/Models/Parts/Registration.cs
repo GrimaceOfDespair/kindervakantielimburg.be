@@ -9,14 +9,14 @@ using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Parts
 {
-	[PartDefinition("Registration",
-		Description = "A registration.",
-		SortOrder = 250,
-		IconUrl = "~/Content/Img/Registration.png")]
-	[AllowedZones("Content", "ColumnLeft", "ColumnRight")]
-	[RestrictParents(typeof (AbstractContentPage))]
-	[AllowedChildren(typeof (Person), typeof(Attachment))]
-	[AvailableZone("Contacts", "ContactData")]
+    [PartDefinition("Registration",
+        Description = "A registration.",
+        SortOrder = 250,
+        IconUrl = "~/Content/Img/Registration.png")]
+    [AllowedZones("Content", "ColumnLeft", "ColumnRight")]
+    [RestrictParents(typeof(AbstractContentPage))]
+    [AllowedChildren(typeof(Person), typeof(Attachment))]
+    [AvailableZone("Contacts", "ContactData")]
     [TabContainer(PersonalDataTab, "PersonalData", 0, CssClass = "tabPanel registrationTab")]
     [TabContainer(ContactsTab, "Contacts", 10, CssClass = "tabPanel registrationTab")]
     [TabContainer(MoreInfoTab, "MoreInfo", 20, CssClass = "tabPanel registrationTab")]
@@ -24,8 +24,8 @@ namespace N2.Templates.Mvc.Models.Parts
     [TabContainer(MedicalDetailsTab, "MedicalDetails", 40, CssClass = "tabPanel registrationTab")]
     [TabContainer(AdministrationTab, "Administration", 50, CssClass = "tabPanel registrationTab")]
     [TabContainer(AttachmentsTab, "Attachments", 60, CssClass = "tabPanel registrationTab")]
-	public class Registration : AbstractItem
-	{
+    public class Registration : AbstractItem
+    {
         public const string PersonalDataTab = "personalDataTab";
         public const string ContactsTab = "contactsTab";
         public const string MoreInfoTab = "moreInfoTab";
@@ -45,33 +45,42 @@ namespace N2.Templates.Mvc.Models.Parts
         public virtual Person Person
         {
             get { return (Person)(GetChild("Person")); }
-            set { if (value != null)
+            set
             {
-                value.Name = "Person";
-                value.AddTo(this);
-            }}
+                if (value != null)
+                {
+                    value.Name = "Person";
+                    value.AddTo(this);
+                }
+            }
         }
 
         [EditableItem("PersonalDetails", 30, ContainerName = PersonalDataTab)]
         public virtual PersonalDetails PersonalDetails
         {
             get { return (PersonalDetails)(GetChild("PersonalDetails")); }
-            set { if (value != null)
+            set
             {
-                value.Name = "PersonalDetails";
-                value.AddTo(this);
-            }}
+                if (value != null)
+                {
+                    value.Name = "PersonalDetails";
+                    value.AddTo(this);
+                }
+            }
         }
 
         [EditableItem("RegistrationDetails", 40, ContainerName = PersonalDataTab)]
         public virtual RegistrationDetails RegistrationDetails
         {
             get { return (RegistrationDetails)(GetChild("RegistrationDetails")); }
-            set { if (value != null)
+            set
             {
-                value.Name = "RegistrationDetails";
-                value.AddTo(this);
-            }}
+                if (value != null)
+                {
+                    value.Name = "RegistrationDetails";
+                    value.AddTo(this);
+                }
+            }
         }
 
         [EditableItem("Utilities", 50, ContainerName = PersonalDataTab)]
@@ -136,16 +145,16 @@ namespace N2.Templates.Mvc.Models.Parts
         }
 
         [EditableChildren("Contacts", "ContactData", "Contacts", 10, ContainerName = ContactsTab)]
-	    public virtual IList<Person> Contacts
-	    {
+        public virtual IList<Person> Contacts
+        {
             get { return GetChildren("ContactData").Cast<Person>(); }
-	    }
+        }
 
         [EditableChildren("Attachments", "AttachmentData", "Attachments", 20, ContainerName = AttachmentsTab)]
         public virtual IList<Attachment> Attachments
-	    {
+        {
             get { return GetChildren("Attachments").Cast<Attachment>(); }
-	    }
+        }
 
         [EditableItem("Payment", 10, ContainerName = AdministrationTab)]
         public virtual Payment Payment

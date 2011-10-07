@@ -48,6 +48,9 @@
     <Reference Include="Ionic.Zip">
       <HintPath>..\packages\DotNetZip.1.9.1.8\lib\net20\Ionic.Zip.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Lucene.Net">
       <HintPath>..\packages\Lucene.2.9.2.2\lib\Lucene.Net.dll</HintPath>
     </Reference>
@@ -241,6 +244,8 @@
     <Compile Include="Dinamico\Models\LanguageIntersection.cs" />
     <Compile Include="Dinamico\Models\PageModelBase.cs" />
     <Compile Include="Dinamico\Models\PartModelBase.cs" />
+    <Compile Include="Dinamico\Models\RegistrationContainer.cs" />
+    <Compile Include="Dinamico\Models\RegistrationPage.cs" />
     <Compile Include="Dinamico\Models\StartPage.cs" />
     <Compile Include="Dinamico\N2\Web\Mvc\ContentWebViewPage.cs" />
     <Compile Include="Dinamico\N2\Web\Mvc\ContentWebViewPageOfT.cs" />
@@ -784,6 +789,7 @@
     <Content Include="Dinamico\Themes\Cloudy\Views\Shared\LayoutPartials\Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\log4net.config" />
     <None Include="App_Data\SampleContent.n2.xml.gz" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

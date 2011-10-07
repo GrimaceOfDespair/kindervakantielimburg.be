@@ -11,19 +11,19 @@ using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models.Pages
 {
-	[PageDefinition("Registration Container",
-		Description = "A list of registrations.",
-		SortOrder = 5,
-		IconUrl = "~/Content/Img/registrations.png")]
-	[RestrictParents(typeof (IStructuralPage))]
-	[SortChildren(SortBy.PublishedDescending)]
-    [AvailableZone("NotifiedUsers", "Users")]
-    public class RegistrationContainer : AbstractContentPage
-	{
-		public IList<RegistrationPage> Registrations
-		{
-			get { return GetChildren(new TypeFilter(typeof (RegistrationPage))).OfType<RegistrationPage>().ToList(); }
-		}
+    //[PageDefinition("Registration Container",
+    //    Description = "A list of registrations.",
+    //    SortOrder = 5,
+    //    IconUrl = "~/Content/Img/registrations.png")]
+    //[RestrictParents(typeof (IStructuralPage))]
+    //[SortChildren(SortBy.PublishedDescending)]
+    //[AvailableZone("NotifiedUsers", "Users")]
+    //public class RegistrationContainer : AbstractContentPage
+    //{
+    //    public IList<RegistrationPage> Registrations
+    //    {
+    //        get { return GetChildren(new TypeFilter(typeof (RegistrationPage))).OfType<RegistrationPage>().ToList(); }
+    //    }
 
-    }
+    //}
 }

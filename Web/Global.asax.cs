@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using log4net;
 
 namespace Web
 {
@@ -12,6 +15,8 @@ namespace Web
 
     public class MvcApplication : System.Web.HttpApplication
     {
+        public ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
@@ -31,10 +36,21 @@ namespace Web
 
         protected void Application_Start()
         {
+            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(Server.MapPath("~/App_Data/log4net.config")));
+
             AreaRegistration.RegisterAllAreas();
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
         }
+
+        protected void Application_Error()
+        {
+            if (Log.IsErrorEnabled)
+            {
+                Log.Error("Application error", Server.GetLastError());
+            }
+        }
+        
     }
 }
