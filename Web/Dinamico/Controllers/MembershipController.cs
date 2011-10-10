@@ -95,11 +95,11 @@ namespace Dinamico.Controllers
                     expiresOn = DateTimeConvertor.FromUnixTime(tokenResult.expires);
                 }
 
-                if (DateTime.UtcNow > expiresOn)
-                {
-                    ModelState.AddModelError("", "Facebook login has expired. Please login again.");
-                }
-                else
+                //if (DateTime.UtcNow > expiresOn)
+                //{
+                //    ModelState.AddModelError("", "Facebook login has expired. Please login again.");
+                //}
+                //else
                 {
                     string accessToken = tokenResult.access_token;
                     var fbClient = new FacebookClient(accessToken);
@@ -109,7 +109,7 @@ namespace Dinamico.Controllers
                 }
             }
 
-            return RedirectToAction("Logon");
+            return View("Logon");
         }
 
 		// **************************************
