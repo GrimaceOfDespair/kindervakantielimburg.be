@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using Dinamico.Models;
+using Facebook;
 
 namespace Dinamico.Controllers
 {
@@ -57,6 +58,59 @@ namespace Dinamico.Controllers
 			// If we got this far, something failed, redisplay form
 			return View(model);
 		}
+
+        private FacebookOAuthClient FacebookOAuthClient
+        {
+            get
+            {
+                var redirectUrl = Url.Action("FacebookOAuth", "Membership", null, (Request.Url ?? new Uri("http://foo.bar")).Scheme);
+                return new FacebookOAuthClient(FacebookApplication.Current) { RedirectUri = new Uri(redirectUrl) };
+            }
+        }
+
+        public ActionResult FacebookLogOn(string returnUrl)
+        {
+            var loginUri = FacebookOAuthClient.GetLoginUrl(new Dictionary<string, object> { { "state", returnUrl } });
+            return Redirect(loginUri.AbsoluteUri);
+        }
+
+	    public ActionResult FacebookOAuth(string code, string state)
+        {
+            FacebookOAuthResult oauthResult;
+            if (FacebookOAuthResult.TryParse(Request.Url, out oauthResult) == false)
+            {
+                ModelState.AddModelError("", "Error while parsing Facebook response");
+            }
+            else if (oauthResult.IsSuccess == false)
+            {
+                ModelState.AddModelError("", "Unable to authenticate with Facebook");
+            }
+            else
+            {
+                dynamic tokenResult = FacebookOAuthClient.ExchangeCodeForAccessToken(code);
+
+                var expiresOn = DateTime.MaxValue;
+                if (tokenResult.ContainsKey("expires"))
+                {
+                    expiresOn = DateTimeConvertor.FromUnixTime(tokenResult.expires);
+                }
+
+                if (DateTime.UtcNow > expiresOn)
+                {
+                    ModelState.AddModelError("", "Facebook login has expired. Please login again.");
+                }
+                else
+                {
+                    string accessToken = tokenResult.access_token;
+                    var fbClient = new FacebookClient(accessToken);
+                    dynamic me = fbClient.Get("me?fields=id,name");
+
+                    ModelState.AddModelError("", me.name);
+                }
+            }
+
+            return RedirectToAction("Logon");
+        }
 
 		// **************************************
 		// URL: /Account/LogOff

@@ -525,6 +525,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\themes\kvg\" />
     <Folder Include="Models\Pages\" />
   </ItemGroup>
   <ItemGroup>
