@@ -1,11 +1,13 @@
 using System;
 using System.Web.UI.WebControls;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
-using N2.Templates.Mvc.Classes;
+using KVG.Core.Layout;
 using N2.Web.UI;
 using Literal = System.Web.UI.WebControls.Literal;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Person")]
     //[FieldSetContainer(GeneralDataFieldSet, "GeneralData", 10)]

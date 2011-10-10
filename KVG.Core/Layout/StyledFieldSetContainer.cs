@@ -8,7 +8,7 @@ using System.Web.UI;
 using N2.Definitions;
 using N2.Web.UI.WebControls;
 
-namespace N2.Templates.Mvc.Classes
+namespace KVG.Core.Layout
 {
     public class StyledFieldSetContainerAttribute : EditorContainerAttribute
     {

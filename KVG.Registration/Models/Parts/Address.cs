@@ -1,8 +1,10 @@
 using System;
 using System.Web.UI.WebControls;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Address")]
     public class Address : AbstractItem

@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using N2.Definitions;
+using KVG.Core.Layout;
+using N2;
 using N2.Details;
-using N2.Templates.Mvc.Models.Parts;
+using N2.Templates.Mvc;
+using KVG.Registration.Models.Pages;
+using KVG.Registration.Models.Parts;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Registration.Models.Pages
 {
     [PageDefinition("Holiday",
         Description = "A KVG Holiday.",

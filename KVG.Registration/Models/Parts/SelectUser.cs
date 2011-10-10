@@ -1,7 +1,9 @@
-﻿using N2.Security.Items;
-using N2.Templates.Mvc.Details;
+﻿using KVG.Core.Models.Parts;
+using N2;
+using N2.Security.Items;
+using KVG.Core.Attributes;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("SelectUser")]
     //[RemoveEditable("Title")]

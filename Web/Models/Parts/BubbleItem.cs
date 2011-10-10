@@ -1,8 +1,12 @@
 ﻿using System;
+using KVG.Core.Layout;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Integrity;
 using N2.Details;
+using N2.Templates.Mvc;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Bubble",
 		IconUrl = "~/Content/Img/help.png")]

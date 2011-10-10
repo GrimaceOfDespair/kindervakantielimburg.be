@@ -1,10 +1,14 @@
+using KVG.Core.Layout;
+using KVG.Core.Models.Pages;
+using N2;
 using N2.Definitions;
 using N2.Integrity;
 using N2.Details;
-using N2.Templates.Mvc.Models.Parts;
+using N2.Templates.Mvc;
+using KVG.Registration.Models.Parts;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Registration.Models.Pages
 {
     [PageDefinition("Registration", Description = "A page with a registration.", SortOrder = 10,
         IconUrl = "~/Content/Img/registrations.png")]
@@ -31,9 +35,9 @@ namespace N2.Templates.Mvc.Models.Pages
         }
 
         [EditableItem("Registration", 10, ContainerName = RegistrationTab)]
-        public virtual Registration Registration
+        public virtual Parts.Registration Registration
         {
-            get { return (Registration)GetChild("Registration"); }
+            get { return (Parts.Registration)GetChild("Registration"); }
             set
             {
                 if (value != null)

@@ -1,4 +1,4 @@
-﻿namespace N2.Templates.Mvc
+﻿namespace KVG.Core.Layout
 {
 	/// <summary>
 	/// Provides access to some zone-related constants. Use these constants 

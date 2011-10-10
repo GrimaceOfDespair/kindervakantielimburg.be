@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using KVG.Core.Layout;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Definitions;
 using N2.Details;
 using N2.Integrity;
+using N2.Templates.Mvc;
 using N2.Web.UI.WebControls;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("Subscribe",
         Description =

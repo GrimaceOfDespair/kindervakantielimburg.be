@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using N2.Templates.Mvc.Models.Pages;
+using KVG.Core.Attributes;
+using KVG.Registration.Models.Pages;
+using N2;
 
-namespace N2.Templates.Mvc.Details
+namespace KVG.Registration.Attributes
 {
     public class HolidaySelectorAttribute : ContentItemSelectorAttribute
     {

@@ -47,8 +47,9 @@
     <Reference Include="N2">
       <HintPath>..\ThirdParty\N2.dll</HintPath>
     </Reference>
-    <Reference Include="N2.Management">
-      <HintPath>..\packages\N2CMS.2.2.1.1\lib\N2.Management.dll</HintPath>
+    <Reference Include="N2.Management, Version=2.2.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdParty\N2.Management.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Web" />

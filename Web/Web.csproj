@@ -242,8 +242,6 @@
     <Compile Include="Dinamico\Models\LanguageIntersection.cs" />
     <Compile Include="Dinamico\Models\PageModelBase.cs" />
     <Compile Include="Dinamico\Models\PartModelBase.cs" />
-    <Compile Include="Dinamico\Models\RegistrationContainer.cs" />
-    <Compile Include="Dinamico\Models\RegistrationPage.cs" />
     <Compile Include="Dinamico\Models\StartPage.cs" />
     <Compile Include="Dinamico\N2\Web\Mvc\ContentWebViewPage.cs" />
     <Compile Include="Dinamico\N2\Web\Mvc\ContentWebViewPageOfT.cs" />
@@ -502,7 +500,9 @@
     <Content Include="Upload\Images\reeds_wide.jpg" />
     <Content Include="Upload\n2logo.png" />
     <Content Include="Upload\n2logo_white.png" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -770,6 +770,10 @@
     <ProjectReference Include="..\KVG.Core\KVG.Core.csproj">
       <Project>{21416BB3-84A5-40FD-8614-92659BCE683E}</Project>
       <Name>KVG.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KVG.Registration\KVG.Registration.csproj">
+      <Project>{E4038EC9-E417-4945-91CD-77D7DDE2590A}</Project>
+      <Name>KVG.Registration</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

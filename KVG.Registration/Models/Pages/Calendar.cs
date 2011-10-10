@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using KVG.Core.Models.Pages;
+using N2;
 using N2.Collections;
 using N2.Integrity;
-using N2.Web.Mvc;
+using KVG.Registration.Models.Pages;
 using N2.Definitions;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Registration.Models.Pages
 {
 	[PageDefinition("Calendar", 
 		Description = "A list of recent events.", 

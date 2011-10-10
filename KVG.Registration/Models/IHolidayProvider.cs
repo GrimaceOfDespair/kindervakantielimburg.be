@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using N2.Templates.Mvc.Models.Pages;
+﻿using KVG.Registration.Models.Pages;
 
-namespace N2.Templates.Mvc.Details
+namespace KVG.Registration.Models
 {
     public interface IHolidayProvider
     {

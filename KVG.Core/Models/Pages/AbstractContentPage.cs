@@ -1,10 +1,10 @@
+using KVG.Core.Layout;
 using N2.Details;
 using N2.Integrity;
 using N2.Definitions;
-using N2.Templates.Mvc.Models.Pages;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Core.Models.Pages
 {
 	/// <summary>
 	/// A page item with a convenient set of properties defined by default.

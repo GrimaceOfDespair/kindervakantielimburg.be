@@ -1,8 +1,12 @@
+using KVG.Core.Layout;
+using KVG.Core.Models.Parts;
+using KVG.Registration.Models.Pages;
+using N2;
 using N2.Details;
 using N2.Integrity;
-using N2.Templates.Mvc.Models.Pages;
+using N2.Templates.Mvc;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Calendar Teaser",
 		IconUrl = "~/Content/Img/calendar_view_month.png")]

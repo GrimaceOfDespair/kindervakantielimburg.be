@@ -1,7 +1,8 @@
+using KVG.Registration.Models.Parts;
 using N2.Details;
 using N2.Web.UI.WebControls;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Core.Models.Parts
 {
 	[WithEditableTitle("Title", 10)]
 	public abstract class SidebarItem : AbstractItem

@@ -1,10 +1,15 @@
 using System;
 using System.Web.UI.WebControls;
+using KVG.Core.Layout;
+using KVG.Core.Models.Pages;
+using N2;
 using N2.Definitions;
 using N2.Details;
 using N2.Integrity;
+using N2.Templates.Mvc;
+using KVG.Registration.Models.Pages;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Registration.Models.Pages
 {
 	[PageDefinition("Event",
 		Description = "An event in the event calendar.",

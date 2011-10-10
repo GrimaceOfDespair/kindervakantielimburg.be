@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Web.UI.WebControls;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
-using N2.Templates.Mvc.Classes;
+using KVG.Core.Layout;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("PersonalDetails")]
     [StyledFieldSetContainer(PersonalDetailsFieldSet, "PersonalDetails", 10, ImageUrl = "~/N2/Resources/icons/vcard.png")]

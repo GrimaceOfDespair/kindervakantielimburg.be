@@ -1,9 +1,13 @@
 using System.Web.UI.WebControls;
+using KVG.Core.Layout;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
 using N2.Integrity;
+using N2.Templates.Mvc;
 using N2.Web.UI.WebControls;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Teaser",
 		IconUrl = "~/Content/Img/heart.png")]

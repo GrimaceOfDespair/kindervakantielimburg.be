@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using N2;
 using N2.Collections;
 using N2.Details;
 using N2.Persistence.Finder;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	/// <summary>
 	/// A base class for item parts in the templates project.

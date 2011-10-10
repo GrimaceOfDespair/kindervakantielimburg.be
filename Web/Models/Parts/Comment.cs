@@ -1,10 +1,12 @@
-﻿using N2.Details;
+﻿using KVG.Core.Models.Parts;
+using N2;
+using N2.Details;
 using N2.Integrity;
 using System.Web.UI.WebControls;
 using N2.Edit.Trash;
 using N2.Definitions;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Comment",
 		IconUrl = "~/Content/Img/comment.png")]

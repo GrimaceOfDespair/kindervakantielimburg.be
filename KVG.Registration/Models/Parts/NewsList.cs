@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
+using KVG.Core.Layout;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Collections;
 using N2.Details;
 using N2.Integrity;
-using N2.Templates.Mvc.Models.Pages;
+using KVG.Registration.Models.Pages;
+using N2.Templates.Mvc;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("News List",
 		Description = "A news list box that can be displayed in a column.",

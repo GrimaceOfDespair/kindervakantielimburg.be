@@ -1,6 +1,8 @@
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Integrity;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
 	[PartDefinition("Two column container",
 		IconUrl = "~/Content/Img/text_columns.png")]

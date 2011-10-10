@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("Payment", Description = "Payment information.")]
     [FieldSetContainer(paymentFieldSet, "Payment", 10)]

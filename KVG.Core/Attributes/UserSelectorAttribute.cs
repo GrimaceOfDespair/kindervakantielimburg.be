@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using N2;
 using N2.Security.Items;
 
-namespace N2.Templates.Mvc.Details
+namespace KVG.Core.Attributes
 {
     public class UserSelectorAttribute : ContentItemSelectorAttribute
     {

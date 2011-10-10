@@ -5,10 +5,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using N2;
 using N2.Details;
 using N2.Web;
 
-namespace N2.Templates.Mvc.Details
+namespace KVG.Core.Attributes
 {
     public abstract class ContentItemSelectorAttribute : AbstractEditableAttribute
     {

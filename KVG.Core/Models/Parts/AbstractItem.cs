@@ -1,6 +1,6 @@
-using System;
+using N2;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Core.Models.Parts
 {
 	/// <summary>
 	/// A base class for item parts in the templates project.

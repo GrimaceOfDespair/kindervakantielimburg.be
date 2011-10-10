@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace N2.Templates.Mvc
+﻿namespace KVG.Core.Layout
 {
 	/// <summary>
 	/// Provides access to tab-related constants. Use these constants instead of

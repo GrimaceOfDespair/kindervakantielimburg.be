@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Web.UI.WebControls;
+using KVG.Core.Models.Parts;
+using KVG.Registration.Attributes;
+using KVG.Registration.Models.Pages;
+using N2;
 using N2.Details;
-using N2.Templates.Mvc.Classes;
-using N2.Templates.Mvc.Details;
-using N2.Templates.Mvc.Models.Pages;
+using KVG.Core.Layout;
+using KVG.Core.Attributes;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("RegistrationDetails")]
     [StyledFieldSetContainer(RegistrationDetailsFieldSet, "RegistrationDetails", 10, ImageUrl = "~/N2/Resources/icons/report_user.png")]

@@ -1,10 +1,11 @@
-using System;
 using System.Collections.Generic;
+using KVG.Core.Layout;
+using N2;
 using N2.Collections;
 using N2.Details;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Core.Models.Pages
 {
 	/// <summary>
 	/// A base class for page items in the template project. Provides automatic

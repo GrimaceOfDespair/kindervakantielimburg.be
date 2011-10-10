@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
+using KVG.Core.Models.Pages;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
 using N2.Integrity;
 using N2.Persistence.Serialization;
-using N2.Templates.Mvc.Models.Pages;
+using KVG.Registration.Models.Pages;
 using N2.Web.UI;
 
-namespace N2.Templates.Mvc.Models.Parts
+namespace KVG.Registration.Models.Parts
 {
     [PartDefinition("Registration",
         Description = "A registration.",

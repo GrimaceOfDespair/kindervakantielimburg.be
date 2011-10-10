@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using KVG.Core.Models.Parts;
+using N2;
 using N2.Details;
-using N2.Templates.Mvc.Models.Parts;
+using KVG.Registration.Models.Parts;
 
-namespace N2.Templates.Mvc.Models.Pages
+namespace KVG.Registration.Models.Pages
 {
     [PartDefinition("RegistrationRange")]
     public class RegistrationRange : AbstractItem
