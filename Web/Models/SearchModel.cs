@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using N2.Templates.Mvc.Models.Pages;
-using N2.Web.Mvc;
-using N2.Web.UI;
 
 namespace N2.Templates.Mvc.Models
 {

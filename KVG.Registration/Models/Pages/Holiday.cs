@@ -64,14 +64,14 @@ namespace N2.Templates.Mvc.Models.Pages
                 string startValue = "", endValue = "";
                 if (EventDate.HasValue)
                 {
-                    format = global::Resources.Common.From;
+                    format = global::Resources.Strings.From;
                     startValue = EventDate.Value.TimeOfDay.TotalSeconds == 0
                                  ? EventDate.Value.ToShortDateString()
                                  : EventDate.Value.ToString();
                 }
                 if (EndDate.HasValue)
                 {
-                    format = global::Resources.Common.Until;
+                    format = global::Resources.Strings.Until;
                     endValue = EndDate.Value.TimeOfDay.TotalSeconds == 0
                                  ? EndDate.Value.ToShortDateString()
                                  : EndDate.Value.ToString();
@@ -80,7 +80,7 @@ namespace N2.Templates.Mvc.Models.Pages
                 }
                 if (EventDate.HasValue && EndDate.HasValue)
                 {
-                    format = global::Resources.Common.FromUntil;
+                    format = global::Resources.Strings.FromUntil;
                 }
                 
 

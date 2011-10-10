@@ -3,8 +3,6 @@ using System.Web.UI.WebControls;
 using N2.Definitions;
 using N2.Details;
 using N2.Integrity;
-using N2.Templates.Mvc.Services;
-using N2.Web.Mvc;
 
 namespace N2.Templates.Mvc.Models.Pages
 {

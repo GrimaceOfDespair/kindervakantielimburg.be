@@ -5,6 +5,10 @@ Project("{2CFEAB61-6A3B-4EB8-B523-560B4BEEF521}") = "Web.Deploy", "Web.Deploy\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{9777B5E5-6078-40F9-AD96-9DD062410638}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVG.Registration", "KVG.Registration\KVG.Registration.csproj", "{E4038EC9-E417-4945-91CD-77D7DDE2590A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KVG.Core", "KVG.Core\KVG.Core.csproj", "{21416BB3-84A5-40FD-8614-92659BCE683E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,18 @@ Global
 		{9777B5E5-6078-40F9-AD96-9DD062410638}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9777B5E5-6078-40F9-AD96-9DD062410638}.Staging|Any CPU.ActiveCfg = Release|Any CPU
 		{9777B5E5-6078-40F9-AD96-9DD062410638}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{E4038EC9-E417-4945-91CD-77D7DDE2590A}.Staging|Any CPU.Build.0 = Release|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Staging|Any CPU.ActiveCfg = Release|Any CPU
+		{21416BB3-84A5-40FD-8614-92659BCE683E}.Staging|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -42,6 +42,9 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.5.2.1.0\lib\net40-client\Facebook.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
@@ -222,13 +225,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Zones.resx</DependentUpon>
     </Compile>
-    <Compile Include="Classes\StyledFieldSetContainer.cs" />
-    <Compile Include="Classes\Tabs.cs" />
-    <Compile Include="Classes\Zones.cs" />
-    <Compile Include="Details\ContentItemSelectorAttribute.cs" />
-    <Compile Include="Details\HolidaySelectorAttribute.cs" />
-    <Compile Include="Details\IHolidayProvider.cs" />
     <Compile Include="Details\UserSelectorAttribute.cs" />
+    <Compile Include="Dinamico\Controllers\AccountController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPagesController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPartsController.cs" />
     <Compile Include="Dinamico\Controllers\FallbackController.cs" />
@@ -261,50 +259,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Pages\AbstractContentPage.cs" />
-    <Compile Include="Models\Pages\AbstractPage.cs" />
-    <Compile Include="Models\Pages\Calendar.cs" />
-    <Compile Include="Models\Pages\Event.cs" />
-    <Compile Include="Models\Pages\Holiday.cs" />
-    <Compile Include="Models\Pages\News.cs" />
-    <Compile Include="Models\Pages\NewsContainer.cs" />
-    <Compile Include="Models\Pages\RegistrationContainer.cs" />
-    <Compile Include="Models\Pages\RegistrationPage.cs" />
-    <Compile Include="Models\Pages\RegistrationRange.cs" />
-    <Compile Include="Models\Parts\AbstractItem.cs" />
+    <Compile Include="Models\FacebookUser.cs" />
+    <Compile Include="Models\InMemoryUserStore.cs" />
     <Compile Include="Models\Parts\AbstractSearchBox.cs" />
-    <Compile Include="Models\Parts\Address.cs" />
-    <Compile Include="Models\Parts\Attachment.cs" />
     <Compile Include="Models\Parts\BoxedTextItem.cs" />
     <Compile Include="Models\Parts\BubbleItem.cs" />
-    <Compile Include="Models\Parts\CalendarTeaser.cs" />
     <Compile Include="Models\Parts\Columns.cs" />
     <Compile Include="Models\Parts\Comment.cs" />
     <Compile Include="Models\Parts\CommentInput.cs" />
     <Compile Include="Models\Parts\CommentList.cs" />
     <Compile Include="Models\Parts\ControlPanel.cs" />
     <Compile Include="Models\Parts\DatabaseSearchBox.cs" />
-    <Compile Include="Models\Parts\Diet.cs" />
-    <Compile Include="Models\Parts\Handicap.cs" />
     <Compile Include="Models\Parts\LoginItem.cs" />
-    <Compile Include="Models\Parts\NewsList.cs" />
-    <Compile Include="Models\Parts\Payment.cs" />
-    <Compile Include="Models\Parts\Person.cs" />
-    <Compile Include="Models\Parts\PersonalDetails.cs" />
-    <Compile Include="Models\Parts\Phone.cs" />
     <Compile Include="Models\Parts\RandomImage.cs" />
-    <Compile Include="Models\Parts\Registration.cs" />
-    <Compile Include="Models\Parts\RegistrationDetails.cs" />
     <Compile Include="Models\Parts\RssAggregator.cs" />
-    <Compile Include="Models\Parts\SelectUser.cs" />
-    <Compile Include="Models\Parts\SidebarItem.cs" />
     <Compile Include="Models\Parts\SocialBookmarks.cs" />
     <Compile Include="Models\Parts\SubMenu.cs" />
     <Compile Include="Models\Parts\Teaser.cs" />
     <Compile Include="Models\Parts\TextItem.cs" />
     <Compile Include="Models\Parts\UserRegistration.cs" />
-    <Compile Include="Models\Parts\Utilities.cs" />
-    <Compile Include="Models\RegistrationModel.cs" />
     <Compile Include="Models\SearchModel.cs" />
     <Compile Include="Models\UserProfile.cs" />
     <Compile Include="Models\UserRegistrationModel.cs" />
@@ -552,7 +525,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Models\Pages\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -791,6 +764,13 @@
   <ItemGroup>
     <Content Include="App_Data\log4net.config" />
     <None Include="App_Data\SampleContent.n2.xml.gz" />
+    <Content Include="Views\Shared\ProfileInfo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KVG.Core\KVG.Core.csproj">
+      <Project>{21416BB3-84A5-40FD-8614-92659BCE683E}</Project>
+      <Name>KVG.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
