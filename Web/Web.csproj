@@ -436,6 +436,8 @@
     <Content Include="Dinamico\Themes\Default\Scripts\jquery.highlight-3.js" />
     <Content Include="Dinamico\Themes\Default\Scripts\Site.js" />
     <Content Include="Dinamico\Themes\Default\Thumbnail.jpg" />
+    <Content Include="Dinamico\Themes\KVG\Content\images\facebook-icons.png" />
+    <Content Include="Dinamico\Themes\KVG\Content\Site.css" />
     <Content Include="Dinamico\Themes\Roadwork\Content\down.png" />
     <Content Include="Dinamico\Themes\Roadwork\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Roadwork\Content\home.png" />
@@ -766,6 +768,8 @@
     <Content Include="App_Data\log4net.config" />
     <None Include="App_Data\SampleContent.n2.xml.gz" />
     <Content Include="Views\Shared\ProfileInfo.cshtml" />
+    <Content Include="Dinamico\Themes\KVG\Views\Membership\LogOn.cshtml" />
+    <Content Include="Dinamico\Themes\KVG\Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KVG.Core\KVG.Core.csproj">
