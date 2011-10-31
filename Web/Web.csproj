@@ -226,7 +226,6 @@
       <DependentUpon>Zones.resx</DependentUpon>
     </Compile>
     <Compile Include="Details\UserSelectorAttribute.cs" />
-    <Compile Include="Dinamico\Controllers\AccountController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPagesController.cs" />
     <Compile Include="Dinamico\Controllers\ContentPartsController.cs" />
     <Compile Include="Dinamico\Controllers\FallbackController.cs" />
@@ -257,8 +256,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\FacebookUser.cs" />
-    <Compile Include="Models\InMemoryUserStore.cs" />
     <Compile Include="Models\Parts\AbstractSearchBox.cs" />
     <Compile Include="Models\Parts\BoxedTextItem.cs" />
     <Compile Include="Models\Parts\BubbleItem.cs" />
@@ -407,7 +404,6 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Dinamico\N2\readme.txt" />
-    <Content Include="Dinamico\readme.txt" />
     <Content Include="Dinamico\Themes\Cloudy\Content\Elements.css" />
     <Content Include="Dinamico\Themes\Cloudy\Content\fade.png" />
     <Content Include="Dinamico\Themes\Cloudy\Content\home.png" />

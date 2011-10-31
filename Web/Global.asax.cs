@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -36,7 +37,8 @@ namespace Web
 
         protected void Application_Start()
         {
-            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(Server.MapPath("~/App_Data/log4net.config")));
+            var log4netConfig = ConfigurationManager.AppSettings["log4net.config"] ?? "~/App_Data/log4net.config";
+            log4net.Config.XmlConfigurator.ConfigureAndWatch(new FileInfo(Server.MapPath(log4netConfig)));
 
             AreaRegistration.RegisterAllAreas();
 

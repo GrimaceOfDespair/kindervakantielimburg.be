@@ -1,6 +1,8 @@
-﻿@if(Request.IsAuthenticated) 
+﻿@using N2.Security
+
+@if(Request.IsAuthenticated) 
 {
-	<a href="@Url.Action("LogOff", "Membership")">@Content.Translate["Log off"] <strong>@Context.User.Identity.Name</strong></a>
+	<a href="@Url.Action("LogOff", "Membership")">@Content.Translate["Log off"] <strong>@(N2.Context.Current.Resolve<ItemBridge>().GetUser(Context.User.Identity.Name).Title)</strong></a>
 }
 else
 {

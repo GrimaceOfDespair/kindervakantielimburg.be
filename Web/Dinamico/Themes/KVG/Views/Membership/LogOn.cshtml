@@ -20,6 +20,7 @@
 
 @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
 
+
 @using (Html.BeginForm()) {
     <div>
         <fieldset>
@@ -50,7 +51,9 @@
                 <input type="submit" value="@Content.Translate.Text("Log On")" />
             </p>
 
-            <a class="fb-login fb_button fb_norm fb_button_medium" href="@Url.Action("FacebookLogOn", "Membership")">
+            @Html.ValidationMessage("Facebook")
+
+            <a class="fb-login fb_button fb_norm fb_button_medium" href="@Url.Action("FacebookLogOn", "Membership", new { returnUrl = Request.QueryString["returnUrl"] })">
                 <span class="fb_button_text fb_norm">
                     Login with Facebook
                 </span>

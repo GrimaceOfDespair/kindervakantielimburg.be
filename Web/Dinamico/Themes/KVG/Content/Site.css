@@ -7,6 +7,9 @@
 
 /*#content img.main { width:920px; }*/
 
+/*
+* Facebook
+*/
 .fb_button {
   float: right;
   font: normal bold 11px/14px arial,sans-serif;
@@ -32,3 +35,33 @@
   margin: 1px 1px 0 21px;
   text-shadow: none;
 }
+
+/*
+* Validation
+*/
+.field-validation-error
+{
+      color: #ff0000;
+  }
+
+  .field-validation-valid
+  {
+      display: none;
+  }
+
+  .input-validation-error
+  {
+      border: 1px solid #ff0000;
+      background-color: #ffeeee;
+  }
+
+  .validation-summary-errors
+  {
+      font-weight: bold;
+      color: #ff0000;
+  }
+
+  .validation-summary-valid
+  {
+      display: none;
+  }

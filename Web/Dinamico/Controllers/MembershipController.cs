@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Reflection;
 using System.Security.Principal;
 using System.Web;
 using System.Web.Mvc;
@@ -9,12 +10,18 @@ using System.Web.Routing;
 using System.Web.Security;
 using Dinamico.Models;
 using Facebook;
+using KVG.Core.Extensions;
+using log4net;
+using N2.Security;
+using Web.Models;
 
 namespace Dinamico.Controllers
 {
 	public class MembershipController : Controller
 	{
-		public MembershipController(IFormsAuthenticationService formsService, IMembershipService membershipService)
+        public ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+
+        public MembershipController(IFormsAuthenticationService formsService, IMembershipService membershipService)
 		{
 			FormsService = formsService;
 			MembershipService = membershipService;
@@ -70,7 +77,15 @@ namespace Dinamico.Controllers
 
         public ActionResult FacebookLogOn(string returnUrl)
         {
-            var loginUri = FacebookOAuthClient.GetLoginUrl(new Dictionary<string, object> { { "state", returnUrl } });
+            if (string.IsNullOrEmpty(returnUrl))
+            {
+                returnUrl = Url.AbsoluteAction("Logon", "Membership");
+            }
+
+            var oauthUrl = Url.AbsoluteAction("FacebookOAuth").ToUri();
+
+            var loginUri = FacebookOAuthClient.GetLoginUrl(FacebookApplication.Current.AppId, oauthUrl, new[] {"email"},
+                                                           new Dictionary<string, object> {{"state", returnUrl}});
             return Redirect(loginUri.AbsoluteUri);
         }
 
@@ -79,33 +94,69 @@ namespace Dinamico.Controllers
             FacebookOAuthResult oauthResult;
             if (FacebookOAuthResult.TryParse(Request.Url, out oauthResult) == false)
             {
-                ModelState.AddModelError("", "Error while parsing Facebook response");
+                ModelState.AddModelError("Facebook", "Error while parsing Facebook response");
             }
             else if (oauthResult.IsSuccess == false)
             {
-                ModelState.AddModelError("", "Unable to authenticate with Facebook");
+                ModelState.AddModelError("Facebook", "Facebook did not grant access");
             }
             else
             {
-                dynamic tokenResult = FacebookOAuthClient.ExchangeCodeForAccessToken(code);
-
-                var expiresOn = DateTime.MaxValue;
-                if (tokenResult.ContainsKey("expires"))
+                try
                 {
-                    expiresOn = DateTimeConvertor.FromUnixTime(tokenResult.expires);
-                }
+                    dynamic tokenResult = FacebookOAuthClient.ExchangeCodeForAccessToken(code);
 
-                //if (DateTime.UtcNow > expiresOn)
-                //{
-                //    ModelState.AddModelError("", "Facebook login has expired. Please login again.");
-                //}
-                //else
-                {
+                    var expiresOn = DateTime.MaxValue;
+                    if (tokenResult.ContainsKey("expires"))
+                    {
+                        expiresOn = DateTimeConvertor.FromUnixTime(tokenResult.expires);
+                    }
+
                     string accessToken = tokenResult.access_token;
                     var fbClient = new FacebookClient(accessToken);
-                    dynamic me = fbClient.Get("me?fields=id,name");
+                    dynamic me = fbClient.Get("me?fields=id,name,email");
+                    long facebookId;
+                    Int64.TryParse(me.id, out facebookId);
 
-                    ModelState.AddModelError("", me.name);
+                    if (string.IsNullOrEmpty(me.email))
+                    {
+                        ModelState.AddModelError("Facebook", "Facebook did not return your e-mail address. Make sure your privacy settings in Facebook allow this.");
+                    }
+                    else
+                    {
+                        var userName = facebookId.ToString();
+                        MembershipCreateStatus createUserStatus = MembershipService.CreateUser(userName,
+                                                                                               Guid.NewGuid().ToString(),
+                                                                                               me.email);
+
+                        if (createUserStatus == MembershipCreateStatus.Success)
+                        {
+                            var itemBridge = N2.Context.Current.Resolve<ItemBridge>();
+                            var user = itemBridge.GetUser(userName) as UserProfile;
+                            if (user != null)
+                            {
+                                user.Title = me.name;
+                                itemBridge.Save(user);
+                            }
+                        }
+
+                        FormsAuthentication.SetAuthCookie(userName, false);
+
+                        // prevent open redirection attack by checking if the url is local.
+                        if (Url.IsLocalUrl(state))
+                        {
+                            return Redirect(state);
+                        }
+                    }
+                }
+                catch (FacebookApiException e)
+                {
+                    if (Log.IsErrorEnabled)
+                    {
+                        Log.Error("Facebook error while logging in", e);
+                    }
+
+                    ModelState.AddModelError("Facebook", "Error while logging in with Facebook: " + e.Message);
                 }
             }
 
